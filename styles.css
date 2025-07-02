@@ -125,3 +125,87 @@ footer {
   text-align: center;
   font-size: 0.9rem;
 }
+/* ==================== */
+/* MEDIA QUERIES MOBILE */
+/* ==================== */
+
+@media (max-width: 768px) {
+  /* HEADER MOBILE */
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* MENU HAMBURGER */
+  .menu-toggle {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  nav ul {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: #0f3460;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    transition: right 0.5s ease;
+    z-index: 90;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+  }
+
+  nav ul.active {
+    right: 0;
+  }
+
+  /* CONTENU PRINCIPAL */
+  .category-section {
+    margin: 2rem 0;
+  }
+
+  .category-section h2 {
+    font-size: 1.5rem;
+  }
+
+  /* CARTES MOBILE */
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+
+  /* BOUTON MOBILE */
+  .btn {
+    padding: 0.8rem 0;
+  }
+
+  /* OVERLAY POUR MENU OUVERT */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 80;
+  }
+
+  .overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
