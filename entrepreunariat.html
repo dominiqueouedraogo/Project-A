@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Entrepreneuriat - AffiliaPro</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+</head>
+<script>
+  function toggleMenu() {
+    const nav = document.querySelector('nav ul');
+    const overlay = document.querySelector('.overlay');
+    nav.classList.toggle('active');
+    overlay.classList.toggle('active');
+  }
+</script>
+<div class="overlay" onclick="toggleMenu()"></div>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>AffiliaPro</h1>
+      <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+
+      <nav>
+        <ul> 
+            <li><a href="index.html">Accueil</a></li>
+          <li><a href="tech-gaming.html">Tech & Gaming</a></li>
+          <li><a href="sante-beaute.html">Santé & Beauté</a></li>
+          <li><a href="#">Entrepreneur & Développement</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="category-section">
+      <div class="container">
+        <h2>Entrepreneuriat & Développement Personnel</h2>
+        <div class="cards">
+          <article class="card">
+            <img src="image/image startup.jpg" alt="Formation Business" />
+            <h3>Formation Startup</h3>
+            <p>
+Startup Syndrome Format Kindle
+de Alexandre Dormel (Auteur) </p>
+            <a href="https://www.amazon.fr/s?k=formation+startup&__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2MD2LSE196TVZ&sprefix=formation+startu%2Caps%2C546&linkCode=ll2&tag=dominiqueodg1-21&linkId=002fa82e9afa75cc419d0122023e3654&language=fr_FR&ref_=as_li_ss_tl" class="btn">Voir l'offre</a>
+          </article>
+          <article class="card">
+            <img src="image/image coaching.jpg" alt="Coaching" />
+            <h3>Coaching de Vie</h3>
+            <p>On ne peut pas plaire à tout le monde: Un livre sur la confiance en soi</p>
+            <a href="#" class="btn">Voir l'offre</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 AffiliaPro - Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+</html>
