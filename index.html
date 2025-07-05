@@ -18,21 +18,27 @@
 <div class="overlay" onclick="toggleMenu()"></div>
 
 <body>
-  <header>
-    <div class="container">
-      <h1>AffiliaPro</h1>
-      <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+  <header class="video-header">
+  <video autoplay muted loop playsinline>
+    <source src="video/pub.mp4" type="video/mp4">
+    Votre navigateur ne supporte pas la vidéo.
+  </video>
 
-      <nav>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="tech-gaming.html">Tech & Gaming</a></li>
-          <li><a href="sante-beaute.html">Santé & Beauté</a></li>
-          <li><a href="entrepreunariat.html">Entrepreneur & Développement</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div class="container overlay-content">
+    <h1>AffiliaPro</h1>
+    <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="tech-gaming.html">Tech & Gaming</a></li>
+        <li><a href="sante-beaute.html">Santé & Beauté</a></li>
+        <li><a href="entrepreunariat.html">Entrepreneur & Développement</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
 
   <main>
     <section class="category-section">

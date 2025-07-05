@@ -18,21 +18,27 @@
 <div class="overlay" onclick="toggleMenu()"></div>
 
 <body>
-  <header>
-    <div class="container">
-      <h1>AffiliaPro</h1>
-      <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+ <header class="video-header">
+  <video autoplay muted loop playsinline>
+    <source src="video/pub.mp4" type="video/mp4">
+    Votre navigateur ne supporte pas la vidéo.
+  </video>
 
-      <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-          <li><a href="tech-gaming.html">Tech & Gaming</a></li>
-          <li><a href="sante-beaute.html">Santé & Beauté</a></li>
-           <li><a href="entrepreunariat.html">Entrepreneur & Développement</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div class="container overlay-content">
+    <h1>AffiliaPro</h1>
+    <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="tech-gaming.html">Tech & Gaming</a></li>
+        <li><a href="sante-beaute.html">Santé & Beauté</a></li>
+        <li><a href="entrepreunariat.html">Entrepreneur & Développement</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
 
   <main>
     <section class="category-section">
@@ -40,11 +46,11 @@
         <h2>Tech & Gaming</h2>
         <div class="cards">
           <article class="card">
-            <img src="image/image casque.jpg" alt="Casque Gaming" />
-            <h3>Casque Gaming XYZ</h3>
-            <p>JBL Quantum 100N, casque gaming circum-auriculaire filaire, micro amovible, QuantumSURROUND Signature, comfortable, compatibilité multiplateformes et Windows Sonic Spatial Sound, rouge et bleu </p>
+            <img src="image/dell2.jpg" alt="Casque Gaming" />
+            <h3>Laptop Ultra Fin</h3>
+            <p>Dell P1424H 14" Full HD (1920x1080) Écran Portable, 60Hz, IPS, 6ms, 2X USB-C, Garantie 3 Ans, Argent</p>
            <a 
-    href="https://www.amazon.fr/Alienware-Casque-Gaming-sans-Pro/dp/B0DMT8NQHK?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dib=eyJ2IjoiMSJ9.k0OCPkgeMLEd51wehZQuAfs9mUVpdvE3P9_ExJfjeAcprPqV0ihTcUC-E8C07jZY_y5IVItIFQRfT_Ha0-cuH0xetpLFsNi4nJuLJIDr3J3WzP3H5Nm9NSbSMEfRYNImAoAviYY8z2XzYmL2ocU8Zg70NMyIaB-xJte-1bYEs5EoaR-QSUkolWvyVB6DcmdFo-Rqqn81jwB2PBxjQ31h7BsVp3aXw_p7ZPT3kuzUCHkQBd-5I4hxSYrAW2MzSc2_u416WfxS9YdWUJXFGqGhPgfdCi5kEDxz8ouC-U3jzsc.a6jqlW-gbL5RGt7zFUti5Wv45R8wUaQtwSqFq5MRd7Y&dib_tag=se&keywords=gaming&qid=1751495170&sr=8-5-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll1&tag=dominiqueodg1-21&linkId=8e5bf00e86f0371c597e733222ccbf8c&language=fr_FR&ref_=as_li_ss_tl" 
+    href="https://www.amazon.fr/Dell-P1424H-1920x1080-Portable-Garantie/dp/B0C8LM4ZZD?crid=GE9XA3Z2OIBU&dib=eyJ2IjoiMSJ9.vHetSGYgaauBknkv4CWNGypaytkUWrHm_dRhmYx7gJukYfG97lTVFiUiOH7-93D3lkOulthOVQa8VsGl4i8o3KDfEDTvLej2JjcRgRabV0m-ViM3ZP5BRFZeL-wTEhwN6CjHIWEt6Z4f-hmwp6OUAJsQjWaEkFn5H7vx8X151g5ViY5BQKg4kaeMJB-jmf7ElVzpTNLtLcr1ilgLlyqnb8Jh8c8o9t-x-YQDiCieGXlmMjkNfwHZyLy31rg7ERz4xsxNF2rmdgUHbpXdF7WUpD-7SWvKXat1JNPyEfEY5LM.rsHuwOEnwHzeF-u0aP2nK03a44xLQ_WaqjjNGQu250U&dib_tag=se&keywords=ordinateur+laptop&qid=1751551252&sprefix=%2Caps%2C1277&sr=8-5-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1&linkCode=ll1&tag=dominiqueodg1-21&linkId=f978d3ea408682597277914d56a30e26&language=fr_FR&ref_=as_li_ss_tl" 
     class="btn" 
     target="_blank"
     rel="noopener noreferrer"
@@ -78,6 +84,126 @@
             <p>Acer Aspire 3 A317-55P-C8DB, Ordinateur Portable 17.3" Full HD IPS, PC Portable (Intel Processeur Celeron N100, Ram 4Go, SSD 128Go, Intel UHD Graphics, Windows 11 Famille) Clavier AZERTY, Laptop Gris </p>
             <a href="https://www.amazon.fr/s?k=ordinateur+laptop&__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=ONIPA5N5UGJM&sprefix=ordinateur+lapt%2Caps%2C1750&linkCode=ll2&tag=dominiqueodg1-21&linkId=a9d975e3a628742f80e6d560a14ab8a3&language=fr_FR&ref_=as_li_ss_tl" class="btn">Voir l'offre</a>
           </article>
+          <article class="card">
+            <img src="image/ordi.jpg" alt="Ordinateur Portable" />
+            <h3>Laptop Ultra Fin</h3>
+            <p>Dell Inspiron 15 3535 Ordinateur Portable 15.6" FHD (1920 x 1080), Processeur AMD Ryzen 5 7520U, Graphique AMD Radeon, RAM 8Go, SSD 512Go, Windows 11 Home, Clavier AZERTY Français, Noir  </p>
+            <a href="https://www.amazon.fr/Dell-Inspiron-Ordinateur-Processeur-Graphique/dp/B0CZC5NV1H?crid=KLA7IRRREE86&dib=eyJ2IjoiMSJ9._8TGDou0LQOAjLY_-n8INAaTzDO_ylBVIFvjNfTyEJGkYfG97lTVFiUiOH7-93D3lkOulthOVQa8VsGl4i8o3IkVtZSkC-9fx6RxZzR0zVObaK---7Owy7vfaBZNJ60U6CjHIWEt6Z4f-hmwp6OUAJsQjWaEkFn5H7vx8X151g5ViY5BQKg4kaeMJB-jmf7E4Xm2-6bR7JiSuKp2nyLocJVyr_viaf0MQLaEzXgsMTIrG6b64rKByTl_fvwX24m4hoENiQMuwBarE5-_iGGoDxMcCn9wXEFngBIE9ZE-5vY.3EeJNrvuvc3o-even29Nm7EUfpivqIhgXfaoZu3wXWY&dib_tag=se&keywords=ordinateur%2Blaptop&qid=1751544792&sprefix=%2Caps%2C1501&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll1&tag=dominiqueodg1-21&linkId=e40a2bdb9c289cfdfdc10246704c8253&language=fr_FR&ref_=as_li_ss_tl" class="btn">Voir l'offre</a>
+          </article>
+          <article class="card">
+            <img src="image/dell.jpg" alt="Ordinateur Portable" />
+            <h3>Laptop Ultra Fin</h3>
+            <p>Dell Inspiron 16 5645 Ordinateur Portable, Processeur AMD Ryzen 7-8840U, Écran 16'' FHD+, 16Go RAM, 1 TB SSD, Graphique AMD UMA, Windows 11 Home - Clavier rétroéclairé Français AZERTY, Indigo </p>
+            <a href="https://www.amazon.fr/Dell-Inspiron-Display-7-8840U-Windows/dp/B0CZC4PYRR?crid=GE9XA3Z2OIBU&dib=eyJ2IjoiMSJ9.vHetSGYgaauBknkv4CWNGypaytkUWrHm_dRhmYx7gJukYfG97lTVFiUiOH7-93D3lkOulthOVQa8VsGl4i8o3KDfEDTvLej2JjcRgRabV0m-ViM3ZP5BRFZeL-wTEhwN6CjHIWEt6Z4f-hmwp6OUAJsQjWaEkFn5H7vx8X151g5ViY5BQKg4kaeMJB-jmf7ElVzpTNLtLcr1ilgLlyqnb8Jh8c8o9t-x-YQDiCieGXlmMjkNfwHZyLy31rg7ERz4xsxNF2rmdgUHbpXdF7WUpD-7SWvKXat1JNPyEfEY5LM.rsHuwOEnwHzeF-u0aP2nK03a44xLQ_WaqjjNGQu250U&dib_tag=se&keywords=ordinateur+laptop&qid=1751550902&sprefix=%2Caps%2C1277&sr=8-4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1&linkCode=ll1&tag=dominiqueodg1-21&linkId=d76bf01e735f20bd757cc368d510394f&language=fr_FR&ref_=as_li_ss_tl" class="btn">Voir l'offre</a>
+          </article>
+           <article class="card">
+            <img src="image/dell1.jpg" alt="Ordinateur Portable" />
+            <h3>Laptop Ultra Fin</h3>
+            <p>Dell XPS 13 (9340) Ordinateur Portable 13,4" Écran FHD+ 120 Hz, Intel Core Ultra 7 Series 1 - Intel Evo Edition, Intel Arc, 32Go RAM, 1To SSD, Windows 11 Home, Clavier Rétroéclairé AZERTY, Platinum</p>
+            <a href="https://www.amazon.fr/Dell-Ordinateur-Portable-120Hz-%C3%89dition/dp/B0CYXLQJ9S?crid=GE9XA3Z2OIBU&dib=eyJ2IjoiMSJ9.vHetSGYgaauBknkv4CWNGypaytkUWrHm_dRhmYx7gJukYfG97lTVFiUiOH7-93D3lkOulthOVQa8VsGl4i8o3KDfEDTvLej2JjcRgRabV0m-ViM3ZP5BRFZeL-wTEhwN6CjHIWEt6Z4f-hmwp6OUAJsQjWaEkFn5H7vx8X151g5ViY5BQKg4kaeMJB-jmf7ElVzpTNLtLcr1ilgLlyqnb8Jh8c8o9t-x-YQDiCieGXlmMjkNfwHZyLy31rg7ERz4xsxNF2rmdgUHbpXdF7WUpD-7SWvKXat1JNPyEfEY5LM.rsHuwOEnwHzeF-u0aP2nK03a44xLQ_WaqjjNGQu250U&dib_tag=se&keywords=ordinateur%2Blaptop&qid=1751551073&sprefix=%2Caps%2C1277&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll1&tag=dominiqueodg1-21&linkId=b3ebad07a723665784d9e765aefdfc7c&language=fr_FR&ref_=as_li_ss_tl" class="btn">Voir l'offre</a>
+            </article>
+             <article class="card">
+            <img src="image/dell2.jpg" alt="Ordinateur Portable" />
+            <h3>Laptop Ultra Fin</h3>
+            <p>Dell P1424H 14" Full HD (1920x1080) Écran Portable, 60Hz, IPS, 6ms, 2X USB-C, Garantie 3 Ans, Argent </p>
+            <a href="https://www.amazon.fr/Dell-P1424H-1920x1080-Portable-Garantie/dp/B0C8LM4ZZD?crid=GE9XA3Z2OIBU&dib=eyJ2IjoiMSJ9.vHetSGYgaauBknkv4CWNGypaytkUWrHm_dRhmYx7gJukYfG97lTVFiUiOH7-93D3lkOulthOVQa8VsGl4i8o3KDfEDTvLej2JjcRgRabV0m-ViM3ZP5BRFZeL-wTEhwN6CjHIWEt6Z4f-hmwp6OUAJsQjWaEkFn5H7vx8X151g5ViY5BQKg4kaeMJB-jmf7ElVzpTNLtLcr1ilgLlyqnb8Jh8c8o9t-x-YQDiCieGXlmMjkNfwHZyLy31rg7ERz4xsxNF2rmdgUHbpXdF7WUpD-7SWvKXat1JNPyEfEY5LM.rsHuwOEnwHzeF-u0aP2nK03a44xLQ_WaqjjNGQu250U&dib_tag=se&keywords=ordinateur+laptop&qid=1751551252&sprefix=%2Caps%2C1277&sr=8-5-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1&linkCode=ll1&tag=dominiqueodg1-21&linkId=f978d3ea408682597277914d56a30e26&language=fr_FR&ref_=as_li_ss_tl" class="btn">Voir l'offre</a>
+            </article>
+             <article class="card">
+            <img src="image/acer1.jpg" alt="Ordinateur Portable" />
+            <h3>Laptop Ultra Fin</h3>
+            <p>Acer Aspire Go 14 AG14-31P-3142, Ordinateur Portable 14'' WUXGA IPS, PC Portable (Intel Core i3-N305, RAM 8 Go, SSD 512 Go, Intel UHD Graphics, Windows 11), Laptop Gris, Clavier AZERTY (Français) </p>
+            <a href="https://www.amazon.fr/Acer-AG14-31P-3142-Ordinateur-Portable-Graphics/dp/B0B8YVHT85?crid=GE9XA3Z2OIBU&dib=eyJ2IjoiMSJ9.vHetSGYgaauBknkv4CWNGypaytkUWrHm_dRhmYx7gJukYfG97lTVFiUiOH7-93D3lkOulthOVQa8VsGl4i8o3KDfEDTvLej2JjcRgRabV0m-ViM3ZP5BRFZeL-wTEhwN6CjHIWEt6Z4f-hmwp6OUAJsQjWaEkFn5H7vx8X151g5ViY5BQKg4kaeMJB-jmf7ElVzpTNLtLcr1ilgLlyqnb8Jh8c8o9t-x-YQDiCieGXlmMjkNfwHZyLy31rg7ERz4xsxNF2rmdgUHbpXdF7WUpD-7SWvKXat1JNPyEfEY5LM.rsHuwOEnwHzeF-u0aP2nK03a44xLQ_WaqjjNGQu250U&dib_tag=se&keywords=ordinateur+laptop&qid=1751551400&sprefix=%2Caps%2C1277&sr=8-11&linkCode=ll1&tag=dominiqueodg1-21&linkId=118dc894e6cf11a36ab8fe5d258e6794&language=fr_FR&ref_=as_li_ss_tl" class="btn">Voir l'offre</a>
+            </article>
+             <article class="card">
+            <img src="image/support1.jpg" alt="Ordinateur Portable" />
+            <h3>Laptop Ultra Fin</h3>
+            <p>Pyle Support Ordinateur Portable -Table Debout avec Angle Réglable- Support PC Portable – Laptop Stand-Hauteur Pliable et Plateau Antidérapant à Quatre Branches pour iPad </p>
+            <a href="https://www.amazon.fr/Pyle-Ordinateur-Portable-Pliable-Table-R%C3%A9glable/dp/B00IJSBCLQ?crid=GE9XA3Z2OIBU&dib=eyJ2IjoiMSJ9.vHetSGYgaauBknkv4CWNGypaytkUWrHm_dRhmYx7gJukYfG97lTVFiUiOH7-93D3lkOulthOVQa8VsGl4i8o3KDfEDTvLej2JjcRgRabV0m-ViM3ZP5BRFZeL-wTEhwN6CjHIWEt6Z4f-hmwp6OUAJsQjWaEkFn5H7vx8X151g5ViY5BQKg4kaeMJB-jmf7ElVzpTNLtLcr1ilgLlyqnb8Jh8c8o9t-x-YQDiCieGXlmMjkNfwHZyLy31rg7ERz4PF6pi7AOVbkTVJT0krwWTRmeKzZkYR738SxFI4IItgQ.6owG-UGw5LM6W9KLJmLYmJRpGt8thU9oPG4ph0t6vWQ&dib_tag=se&keywords=ordinateur%2Blaptop&qid=1751551584&sprefix=%2Caps%2C1277&sr=8-40&th=1&linkCode=ll1&tag=dominiqueodg1-21&linkId=e2a5fffcc18f72488974db28fd0da990&language=fr_FR&ref_=as_li_ss_tl" class="btn">Voir l'offre</a>
+            </article>
+             <article class="card">
+            <img src="image/pouce.jpg" alt="Ordinateur Portable" />
+            <h3>Laptop Ultra Fin</h3>
+            <p>[2 Unités] 15.6 Pouces Anti Lumière Bleue Protection Ecran pour Ordinateur Portable Aspect 16:9, Protege Ecran Compatible avec HP/Dell/Acer/Lenovo/Thinkpad/ASUS, Laptop Anti Rayures Ecran Protecteur </p>
+            <a href="https://www.amazon.fr/Unit%C3%A9s-Lumi%C3%A8re-Protection-Ordinateur-Portable/dp/B0CSVWSC13?crid=GE9XA3Z2OIBU&dib=eyJ2IjoiMSJ9.vHetSGYgaauBknkv4CWNGypaytkUWrHm_dRhmYx7gJukYfG97lTVFiUiOH7-93D3lkOulthOVQa8VsGl4i8o3KDfEDTvLej2JjcRgRabV0m-ViM3ZP5BRFZeL-wTEhwN6CjHIWEt6Z4f-hmwp6OUAJsQjWaEkFn5H7vx8X151g5ViY5BQKg4kaeMJB-jmf7ElVzpTNLtLcr1ilgLlyqnb8Jh8c8o9t-x-YQDiCieGXlmMjkNfwHZyLy31rg7ERz4xsxNF2rmdgUHbpXdF7WUpD-7SWvKXat1JNPyEfEY5LM.rsHuwOEnwHzeF-u0aP2nK03a44xLQ_WaqjjNGQu250U&dib_tag=se&keywords=ordinateur%2Blaptop&qid=1751551729&sprefix=%2Caps%2C1277&sr=8-48&th=1&linkCode=ll1&tag=dominiqueodg1-21&linkId=600ca90fa93953fd100f76ce113d956a&language=fr_FR&ref_=as_li_ss_tl" class="btn">Voir l'offre</a>
+            </article>
+            <article class="card">
+            <img src="image/msi.jpg" alt="Ordinateur Portable" />
+            <h3>Laptop Ultra Fin</h3>
+            <p>MSI Pro MP161 E2U écran Portable 15,6" Full HD - Dalle IPS 1920 x 1080, 60 Hz, écran respectueux des Yeux (PC, Portable, Mobile), HP intégrés - Mini-HDMI 2.0b, 2 x USB Type-C </p>
+            <a href="https://www.amazon.fr/dp/B0CYCPTQJQ?pd_rd_i=B0CYCPTQJQ&pd_rd_w=fLHYC&content-id=amzn1.sym.d28e3d6a-4412-4be7-a4f8-1c4a85ce86d9&pf_rd_p=d28e3d6a-4412-4be7-a4f8-1c4a85ce86d9&pf_rd_r=XMJSG7HDS8FHWG98V54X&pd_rd_wg=bnBnc&pd_rd_r=25e99c91-3b5d-46b6-a247-124b2d70d6fc&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw&th=1&linkCode=ll1&tag=dominiqueodg1-21&linkId=18cc2a869272a90d19c7860f24008d79&language=fr_FR&ref_=as_li_ss_tl" class="btn">Voir l'offre</a>
+            </article>
+             <article class="card">
+            <img src="image/samsung.jpg" alt="Ordinateur Portable" />
+            <h3>Laptop Ultra Fin</h3>
+            <p>Samsung Galaxy Book4 Ordinateur portable 15.6'', Intel Core 5, 8Go RAM 256Go SSD Intel Graphics, Gris Anthracite, clavier AZERTY FR </p>
+            <a href="https://www.amazon.fr/dp/B0CV195Z6N?pd_rd_i=B0CV195Z6N&pd_rd_w=UW7l1&content-id=amzn1.sym.5e46eddb-98a6-4b17-8de1-017360461edf&pf_rd_p=5e46eddb-98a6-4b17-8de1-017360461edf&pf_rd_r=FW0TN60TSBP84FMTSTKJ&pd_rd_wg=3XDIu&pd_rd_r=b7467935-6eed-42c8-8227-6a35f8a008b2&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&th=1&linkCode=ll1&tag=dominiqueodg1-21&linkId=25e18fa3d0693c68300eab2f026b1474&language=fr_FR&ref_=as_li_ss_tl" class="btn">Voir l'offre</a>
+            </article>
+             <article class="card">
+            <img src="image/asus.jpg" alt="Ordinateur Portable" />
+            <h3>Laptop Ultra Fin</h3>
+            <p>ASUS Zenbook Duo UX8406CA-PZ011W 14.0 Pouces 3K OLED 120Hz Tactile PC Portable (Intel Core Ultra 9 Processeur 2.9 GHz, 32GB LPDDR5X, 1TB SSD, Intel Arc Graphics, Windows 11 Home) – Clavier AZERTY </p>
+            <a href="https://www.amazon.fr/dp/B0DSGFYJ4C?pd_rd_i=B0DSGFYJ4C&pd_rd_w=PN2os&content-id=amzn1.sym.d28e3d6a-4412-4be7-a4f8-1c4a85ce86d9&pf_rd_p=d28e3d6a-4412-4be7-a4f8-1c4a85ce86d9&pf_rd_r=H1GGZA7YCN639P4RE3S8&pd_rd_wg=WnYpR&pd_rd_r=d92eaa57-1046-475f-82ad-824fe9b182a2&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw&th=1&linkCode=ll1&tag=dominiqueodg1-21&linkId=c70647412906dacee6c78e15fca16451&language=fr_FR&ref_=as_li_ss_tl" class="btn">Voir l'offre</a>
+            </article>
+             <article class="card">
+            <img src="image/lenovo.jpg" alt="Ordinateur Portable" />
+            <h3>Laptop Ultra Fin</h3>
+            <p>Lenovo IdeaPad Slim 3 14IRH8 - Ordinateur Portable 14'' FHD (Intel Core i7-13620H, RAM 16Go, SSD 512Go, Intel UHD Graphics, Windows 11 Home) Clavier AZERTY Français - Gris </p>
+            <a href="https://www.amazon.fr/Lenovo-IdeaPad-Slim-14IRH8-Ordinateur/dp/B0DB1WJYVP?pd_rd_w=6uzzZ&content-id=amzn1.sym.41d6c71f-c79f-48de-93a0-206dcbe3791f&pf_rd_p=41d6c71f-c79f-48de-93a0-206dcbe3791f&pf_rd_r=CGAD7E0D0NG56Y5AC0W1&pd_rd_wg=mJ1gY&pd_rd_r=d857a6a1-2d16-4a3d-86bf-a5ad9590957d&pd_rd_i=B0DB1WJYVP&th=1&linkCode=ll1&tag=dominiqueodg1-21&linkId=6e6e6d2fd44b8725ffeffe1f05e9a16c&language=fr_FR&ref_=as_li_ss_tl" class="btn">Voir l'offre</a>
+            </article>
+             <article class="card">
+            <img src="image/redme.jpg" alt="Ordinateur Portable" />
+            <h3>Xiaomi Redmi Pad Pro</h3>
+            <p>Xiaomi Redmi Pad Pro 6+128, 30,5 cm (12,1 Zoll), Blau [Classe énergétique A]</p>
+            <a href="https://www.amazon.fr/Tablette-tactile-Xiaomi-Redmi-Bleu/dp/B0D4X2RKYP?pf_rd_p=9122ec7c-6b57-4fee-b68e-8b58dece58a4&pf_rd_r=4TZT3ACVBWFB5MXK841G&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&linkCode=ll1&tag=dominiqueodg1-21&linkId=d5ca9957a0abb8aea69d04fff6303f31&language=fr_FR&ref_=as_li_ss_tl" class="btn">Voir l'offre</a>
+            </article>
+             <article class="card">
+            <img src="image/a9.jpg" alt="Ordinateur Portable" />
+            <h3>Samsung X210N Galaxy Tab A9+ 11</h3>
+            <p>Samsung X210N Galaxy Tab A9+ 11,0''PLS TFT Display WLAN 4GB/64GB Schwarz USB-C </p>
+            <a href="https://www.amazon.fr/Samsung-Galaxy-WiFi-64GB-Gris/dp/B0CP839PQ2?pf_rd_p=9122ec7c-6b57-4fee-b68e-8b58dece58a4&pf_rd_r=4TZT3ACVBWFB5MXK841G&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&linkCode=ll1&tag=dominiqueodg1-21&linkId=9bf33dbe8b403a66aa56187de8589755&language=fr_FR&ref_=as_li_ss_tl" class="btn">Voir l'offre</a>
+            </article>
+             <article class="card">
+            <img src="image/rainbow.jpg" alt="Ordinateur Portable" />
+            <h3>Gaming</h3>
+            <p>RAINBOW SIX SIEGE, Code de Téléchargement dans la Boîte, PC </p>
+            <a href="https://www.amazon.fr/RAINBOW-SIEGE-Code-T%C3%A9l%C3%A9chargement-Bo%C3%AEte/dp/B09RRCRW2Q?pf_rd_p=9122ec7c-6b57-4fee-b68e-8b58dece58a4&pf_rd_r=QRYXRMAYWCSTJV42NX22&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&linkCode=ll1&tag=dominiqueodg1-21&linkId=62fe147bb2ae56d4c67c0a0ff098bfc6&language=fr_FR&ref_=as_li_ss_tl" class="btn">Voir l'offre</a>
+            </article>
+             <article class="card">
+            <img src="image/battle.jpg" alt="Ordinateur Portable" />
+            <h3>Gaming</h3>
+            <p>Battlefield 3 </p>
+            <a href="https://www.amazon.fr/Electronic-Arts-5030931102752-Battlefield-3/dp/B004W8E51G?pf_rd_p=9122ec7c-6b57-4fee-b68e-8b58dece58a4&pf_rd_r=QRYXRMAYWCSTJV42NX22&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&linkCode=ll1&tag=dominiqueodg1-21&linkId=1f83037a1e774e3613e3e3b73bc2ece2&language=fr_FR&ref_=as_li_ss_tl" class="btn">Voir l'offre</a>
+            </article>
+             <article class="card">
+            <img src="image/fifa.jpg" alt="Ordinateur Portable" />
+            <h3>Gaming</h3>
+            <p>
+Fifa 23 Standard Edition Pcwin | Code dans la Boite | Jeu Vidéo | Français
+Visiter la boutique Electronic Arts
+</p>
+            <a href="https://www.amazon.fr/Standard-Pcwin-Boite-Vid%C3%A9o-Fran%C3%A7ais/dp/B0B6CLHD4P?pf_rd_p=9122ec7c-6b57-4fee-b68e-8b58dece58a4&pf_rd_r=QRYXRMAYWCSTJV42NX22&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&linkCode=ll1&tag=dominiqueodg1-21&linkId=ae86931e3fb376494ea1a90b7f8b0126&language=fr_FR&ref_=as_li_ss_tl" class="btn">Voir l'offre</a>
+            </article>
+             <article class="card">
+            <img src="image/new.jpg" alt="Ordinateur Portable" />
+            <h3>Gaming</h3>
+            <p>New World Rise of the Angry Earth (DLC) | Téléchargement PC - Code Steam </p>
+            <a href="https://www.amazon.fr/World-Rise-Angry-Earth-T%C3%A9l%C3%A9chargement/dp/B0D33X3JZP?_encoding=UTF8&pf_rd_m=A13V1IB3VIYZZH&pf_rd_s=merchandised-search-12&pf_rd_r=2Q21PXBS9M6ME1S0EFDG&pf_rd_p=6ca67840-aa80-44bc-bbb4-08dd7a0654c0&pf_rd_t=&pf_rd_i=21734155031&linkCode=ll1&tag=dominiqueodg1-21&linkId=66868098c3c2317363fb08076d0d1de9&language=fr_FR&ref_=as_li_ss_tl" class="btn">Voir l'offre</a>
+            </article>
+             <article class="card">
+            <img src="image/lenovotab.jpg" alt="Ordinateur Portable" />
+            <h3>Lenovo Tab M11 - Tablette Tactile 11</h3>
+            <p>Lenovo Tab M11 - Tablette Tactile 11'' WUXGA (Processeur MediaTek Helio G88, 8Coeurs, 4 Go de RAM, eMMC 128 Go, Android 13, WiFi + Bluetooth) Tab Pen - Gris  </p>
+            <a href="https://www.amazon.fr/LENOVO-Tab-128Go-Luna-gray/dp/B0CP1768XQ?pf_rd_p=9122ec7c-6b57-4fee-b68e-8b58dece58a4&pf_rd_r=4TZT3ACVBWFB5MXK841G&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&th=1&linkCode=ll1&tag=dominiqueodg1-21&linkId=dbb4fe3ee22ee75957e3ea9f2f74b8ca&language=fr_FR&ref_=as_li_ss_tl" class="btn">Voir l'offre</a>
+            </article>
+             <article class="card">
+            <img src="image/lenovoplus.jpg" alt="Ordinateur Portable" />
+            <h3>Lenovo Tab Plus - Tablette Tactile 11.5</h3>
+            <p>
+Lenovo Tab Plus - Tablette Tactile 11.5 2K Full HD Dolby Atmos JBL(Mediatek G99, 8Go de RAM, 128Go eMMC, Android 14, WiFi+Bluetooth) - Luna Grey
+Visiter la boutique Lenovo
+ </p>
+            <a href="https://www.amazon.fr/Lenovo-Tab-Plus-Tablette-Bluetooth/dp/B0D7CGJ3TZ?dib=eyJ2IjoiMSJ9.ffHDCbbWcaq1oMg5LBIXTg5-wXESLDI8Ig-eMpfwuoshBltZcR4FKmR_bS2UXu6F71z5q4-K76VP6XCrYD9nsyiaqDJs3kCSh8-KaurN61J8eXUJcNPs_zXFU4gQ4uvpVNbvUl2CGwiLE75vfsvsY2QLy6TNPCkyM7dwFsaHtLQrFey61Rl-C40oiOXiHOThHmM16cnaj7Dhj05-fxIkW-OIMV4OyHqAkCB0tHHCAlQmJXWd2_jMc0Msb1cZKJXRXZ_Mg7Uc4pT-uJSr-VJfBtnkumf80qw3DvliwNVWk5E.-QndzmC-Dl4Z-pttPg1imc3yqzOtODxCSfz7eZzzpLo&dib_tag=se&qid=1751667804&s=computers&sr=1-24&th=1&linkCode=ll1&tag=dominiqueodg1-21&linkId=973d1f28d806598aa668ad5e0d42c134&language=fr_FR&ref_=as_li_ss_tl" class="btn">Voir l'offre</a>
+            </article>
         </div>
       </div>
     </section>
