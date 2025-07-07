@@ -287,6 +287,20 @@ nav a:hover {
   .btn {
     padding: 0.8rem 0;
   }
+  #avis, #comparatif, #video {
+  background: #f4f8fc;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 12px;
+}
+
+.avis-client {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #fff;
+  border-left: 4px solid #007BFF;
+}
+
 
   /* OVERLAY POUR MENU OUVERT */
   .overlay {
