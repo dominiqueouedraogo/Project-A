@@ -12,27 +12,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header class="header-logo-img">
-  
-  <div class="overlay">
-    <img src="image/logo.png" loading="lazy" alt="Affiliapro" class="full-logo" />
-     </div>
-
-  <div class="container overlay-content">
-    <h1>AffiliaPro</h1>
-    <span class="menu-toggle" onclick="toggleMenu()">☰</span>
-
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="top-du-moment.html">Top du moment</a></li>
-        <li><a href="tech-gaming.html">Tech & Gaming</a></li>
-        <li><a href="sante-beaute.html">Santé & Beauté</a></li>
-        <li><a href="entrepreunariat.html">Entrepreneur & Développement</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="image/logo.png" alt="Affiliapro" class="full-logo" loading="lazy">
+        </a>
+      </div>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="top-du-moment.html">Top du moment</a></li>
+          <li><a href="tech-gaming.html">Tech & Gaming</a></li>
+          <li><a href="sante-beaute.html">Santé & Beauté</a></li>
+          <li><a href="entrepreunariat.html">Entrepreneur & Développement</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="overlay" onclick="toggleMenu()"></div>
+  </header>
   <main>
     <section class="category-section">
       <div class="container">
