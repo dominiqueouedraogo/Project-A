@@ -202,4 +202,55 @@ footer {
   .cards {
     grid-template-columns: 1fr;
   }
+  .prev, .next {
+    font-size: 24px;
+    left: -20px;
+    right: -20px;
+  }
 }
+.temoignages-slider {
+  background-color: #f8f8f8;
+  padding: 50px 20px;
+  text-align: center;
+}
+.temoignages-slider h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #222;
+}
+.slider {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.slide {
+  display: none;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.5s ease;
+}
+.slide.active {
+  display: block;
+}
+.etoiles {
+  color: #f39c12;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #333;
+}
+.prev { left: -40px; }
+.next { right: -40px; }
+
+
+

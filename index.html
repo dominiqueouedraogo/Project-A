@@ -19,6 +19,8 @@
 
 <div class="overlay" onclick="toggleMenu()"></div>
 
+
+
 <body>
 <header class="header">
     <div class="container">
@@ -630,6 +632,33 @@ Un outil précieux pour toute personne en quête d’équilibre, de clarté int�
         </div>
       </div>
   </main>
+ <!-- SECTION SLIDER FLÈCHES TÉMOIGNAGES -->
+<section class="temoignages-slider">
+  <h2>Ce que disent nos premiers visiteurs</h2>
+
+  <div class="slider">
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+
+    <div class="slide active">
+      <p class="etoiles">⭐️⭐️⭐️⭐️⭐️</p>
+      <p><strong>Fatou K. (Abidjan)</strong> : “Le site est clair, les produits sont bien présentés. J’ai découvert plein d’idées d’achat !”</p>
+    </div>
+
+    <div class="slide">
+      <p class="etoiles">⭐️⭐️⭐️⭐️☆</p>
+      <p><strong>Jean M. (Bouaké)</strong> : “J’ai recommandé ce site à mes amis, il regroupe tout ce qu’on aime : tech, beauté, entrepreneuriat.”</p>
+    </div>
+
+    <div class="slide">
+      <p class="etoiles">⭐️⭐️⭐️⭐️⭐️</p>
+      <p><strong>Alima D. (Yamoussoukro)</strong> : “Super plateforme pour repérer les tendances avant tout le monde. Bravo Affiliapro !”</p>
+    </div>
+
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+  </div>
+</section>
+
+
 
   <footer>
     <div class="container">
@@ -640,12 +669,19 @@ Un outil précieux pour toute personne en quête d’équilibre, de clarté int�
   <a href="https://wa.me/2250700000000?text=Bonjour%20AffiliaPro%2C%20je%20souhaite%20en%20savoir%20plus%20!" class="whatsapp" target="_blank" rel="noopener noreferrer">
     <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
   </a>
+   <!-- SCRIPT SLIDER -->
   <script>
-    function toggleMenu() {
-      const nav = document.querySelector('nav');
-      const overlay = document.querySelector('.overlay');
-      nav.classList.toggle('active');
-      overlay.classList.toggle('active');
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlide(index) {
+      slides.forEach(slide => slide.classList.remove('active'));
+      slides[index].classList.add('active');
+    }
+
+    function changeSlide(direction) {
+      currentSlide = (currentSlide + direction + slides.length) % slides.length;
+      showSlide(currentSlide);
     }
   </script>
 </body>

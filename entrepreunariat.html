@@ -10,15 +10,8 @@
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
 </head>
-<script>
-  function toggleMenu() {
-    const nav = document.querySelector('nav ul');
-    const overlay = document.querySelector('.overlay');
-    nav.classList.toggle('active');
-    overlay.classList.toggle('active');
-  }
-</script>
-<div class="overlay" onclick="toggleMenu()"></div>
+
+
 
 <body>
   <header class="header">
@@ -273,11 +266,52 @@ Découvrez Startup Syndrome d'Alexandre Dormel, un guide pratique au format Kind
       </div>
     </section>
   </main>
+ <!-- SECTION SLIDER FLÈCHES TÉMOIGNAGES -->
+<section class="temoignages-slider">
+  <h2>Ce que disent nos premiers visiteurs</h2>
+
+  <div class="slider">
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+
+    <div class="slide active">
+      <p class="etoiles">⭐️⭐️⭐️⭐️⭐️</p>
+      <p><strong>Fatou K. (Abidjan)</strong> : “Le site est clair, les produits sont bien présentés. J’ai découvert plein d’idées d’achat !”</p>
+    </div>
+
+    <div class="slide">
+      <p class="etoiles">⭐️⭐️⭐️⭐️☆</p>
+      <p><strong>Jean M. (Bouaké)</strong> : “J’ai recommandé ce site à mes amis, il regroupe tout ce qu’on aime : tech, beauté, entrepreneuriat.”</p>
+    </div>
+
+    <div class="slide">
+      <p class="etoiles">⭐️⭐️⭐️⭐️⭐️</p>
+      <p><strong>Alima D. (Yamoussoukro)</strong> : “Super plateforme pour repérer les tendances avant tout le monde. Bravo Affiliapro !”</p>
+    </div>
+
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+  </div>
+</section>
+
 
   <footer>
     <div class="container">
       <p>© 2025 AffiliaPro - Tous droits réservés.</p>
     </div>
   </footer>
+   <!-- SCRIPT SLIDER -->
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlide(index) {
+      slides.forEach(slide => slide.classList.remove('active'));
+      slides[index].classList.add('active');
+    }
+
+    function changeSlide(direction) {
+      currentSlide = (currentSlide + direction + slides.length) % slides.length;
+      showSlide(currentSlide);
+    }
+  </script>
 </body>
 </html>
