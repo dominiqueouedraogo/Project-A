@@ -1502,7 +1502,7 @@ Faites le plein d'énergie naturellement, où que vous soyez.
     <p>@ 2025 Affiliapro - Tous droits réservés. <a href="mentions-legales.html">Mentions légales</a> | <a href="a-propos.html">À propos</a></p>
     </div>
   </footer>
-   <script>
+ <script>
 // Sélection des éléments
 const menuToggle = document.querySelector('.menu-toggle');
 const navMenu = document.getElementById('nav-menu').querySelector('ul');
@@ -1520,18 +1520,45 @@ overlay.addEventListener('click', () => {
   overlay.classList.remove('active');
 });
 
-// Optionnel : fermer le menu si on clique sur un lien du menu
+// Optionnel : fermer le menu si on clique sur un lien du menu
 document.querySelectorAll('#nav-menu ul li a').forEach(link => {
   link.addEventListener('click', () => {
     navMenu.classList.remove('active');
     overlay.classList.remove('active');
   });
-  function toggleMenu() {
+});
+
+// (Optionnel) Fonction toggleMenu si tu veux l'appeler ailleurs
+function toggleMenu() {
   document.getElementById('nav-menu').classList.toggle('active');
   document.querySelector('.overlay').classList.toggle('active');
 }
-});
+
+// Slider témoignages
+let currentSlide = 0;
+
+function showSlide(n) {
+  const slides = document.querySelectorAll('.temoignages-slider .slide');
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === n);
+  });
+}
+
+// Fonction appelée lors du clic sur les flèches
+function changeSlide(direction) {
+  const slides = document.querySelectorAll('.temoignages-slider .slide');
+  currentSlide += direction;
+  if (currentSlide >= slides.length) currentSlide = 0;
+  if (currentSlide < 0) currentSlide = slides.length - 1;
+  showSlide(currentSlide);
+}
+
+// Initialisation (affiche le premier slide)
+showSlide(currentSlide);
 </script>
+
+
+
 
 
 </body>

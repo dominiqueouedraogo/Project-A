@@ -739,37 +739,6 @@ Découvrez l’élégance à la française avec ce coffret parfumé de Christine
       <p>@ 2025 Affiliapro - Tous droits réservés. <a href="mentions-legales.html">Mentions légales</a> | <a href="a-propos.html">À propos</a></p>
     </div>
   </footer>
-   <script>
-// Sélection des éléments
-const menuToggle = document.querySelector('.menu-toggle');
-const navMenu = document.getElementById('nav-menu').querySelector('ul');
-const overlay = document.querySelector('.overlay');
-
-// Fonction d'ouverture/fermeture du menu
-menuToggle.addEventListener('click', () => {
-  navMenu.classList.toggle('active');
-  overlay.classList.toggle('active');
-});
-
-// Fermer le menu si on clique sur l’overlay
-overlay.addEventListener('click', () => {
-  navMenu.classList.remove('active');
-  overlay.classList.remove('active');
-});
-
-// Optionnel : fermer le menu si on clique sur un lien du menu
-document.querySelectorAll('#nav-menu ul li a').forEach(link => {
-  link.addEventListener('click', () => {
-    navMenu.classList.remove('active');
-    overlay.classList.remove('active');
-  });
-  function toggleMenu() {
-  document.getElementById('nav-menu').classList.toggle('active');
-  document.querySelector('.overlay').classList.toggle('active');
-}
-});
-</script>
-
-
+   
 </body>
 </html>

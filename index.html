@@ -676,7 +676,8 @@ Un outil précieux pour toute personne en quête d’équilibre, de clarté int�
   <a href="https://wa.me/2250700000000?text=Bonjour%20AffiliaPro%2C%20je%20souhaite%20en%20savoir%20plus%20!" class="whatsapp" target="_blank" rel="noopener noreferrer">
     <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
   </a>
-  <script>
+  
+<script>
 // Sélection des éléments
 const menuToggle = document.querySelector('.menu-toggle');
 const navMenu = document.getElementById('nav-menu').querySelector('ul');
@@ -694,17 +695,41 @@ overlay.addEventListener('click', () => {
   overlay.classList.remove('active');
 });
 
-// Optionnel : fermer le menu si on clique sur un lien du menu
+// Optionnel : fermer le menu si on clique sur un lien du menu
 document.querySelectorAll('#nav-menu ul li a').forEach(link => {
   link.addEventListener('click', () => {
     navMenu.classList.remove('active');
     overlay.classList.remove('active');
   });
-  function toggleMenu() {
+});
+
+// (Optionnel) Fonction toggleMenu si tu veux l'appeler ailleurs
+function toggleMenu() {
   document.getElementById('nav-menu').classList.toggle('active');
   document.querySelector('.overlay').classList.toggle('active');
 }
-});
+
+// Slider témoignages
+let currentSlide = 0;
+
+function showSlide(n) {
+  const slides = document.querySelectorAll('.temoignages-slider .slide');
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === n);
+  });
+}
+
+// Fonction appelée lors du clic sur les flèches
+function changeSlide(direction) {
+  const slides = document.querySelectorAll('.temoignages-slider .slide');
+  currentSlide += direction;
+  if (currentSlide >= slides.length) currentSlide = 0;
+  if (currentSlide < 0) currentSlide = slides.length - 1;
+  showSlide(currentSlide);
+}
+
+// Initialisation (affiche le premier slide)
+showSlide(currentSlide);
 </script>
 
 
