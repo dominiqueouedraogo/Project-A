@@ -15,30 +15,30 @@
 
 
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="logo">
-        <a href="index.html">
-          <img src="image/logo.png" alt="Affiliapro" class="full-logo" loading="lazy">
-        </a>
-      </div>
-      <div class="menu-toggle" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="top-du-moment.html">Top du moment</a></li>
-          <li><a href="tech-gaming.html">Tech & Gaming</a></li>
-          <li><a href="sante-beaute.html">Santé & Beauté</a></li>
-          <li><a href="entrepreunariat.html">Entrepreneur & Développement</a></li>
-        </ul>
-      </nav>
+ <header class="header">
+  <div class="container">
+    <div class="logo">
+      <img src="image/logo.png" alt="Affiliapro" class="full-logo" loading="lazy">
+      <h1>AffiliaPro</h1>
     </div>
-    <div class="overlay" onclick="toggleMenu()"></div>
-  </header>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="top-du-moment.html">Top du moment</a></li>
+        <li><a href="tech-gaming.html">Tech & Gaming</a></li>
+        <li><a href="sante-beaute.html">Santé & Beauté</a></li>
+        <li><a href="entrepreunariat.html">Entrepreneur & Développement</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
   <main>
     <section class="category-section">
       <div class="container">
@@ -1502,20 +1502,37 @@ Faites le plein d'énergie naturellement, où que vous soyez.
     <p>@ 2025 Affiliapro - Tous droits réservés. <a href="mentions-legales.html">Mentions légales</a> | <a href="a-propos.html">À propos</a></p>
     </div>
   </footer>
-   <!-- SCRIPT SLIDER -->
-  <script>
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.slide');
+   <script>
+// Sélection des éléments
+const menuToggle = document.querySelector('.menu-toggle');
+const navMenu = document.getElementById('nav-menu').querySelector('ul');
+const overlay = document.querySelector('.overlay');
 
-    function showSlide(index) {
-      slides.forEach(slide => slide.classList.remove('active'));
-      slides[index].classList.add('active');
-    }
+// Fonction d'ouverture/fermeture du menu
+menuToggle.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+  overlay.classList.toggle('active');
+});
 
-    function changeSlide(direction) {
-      currentSlide = (currentSlide + direction + slides.length) % slides.length;
-      showSlide(currentSlide);
-    }
-  </script>
+// Fermer le menu si on clique sur l’overlay
+overlay.addEventListener('click', () => {
+  navMenu.classList.remove('active');
+  overlay.classList.remove('active');
+});
+
+// Optionnel : fermer le menu si on clique sur un lien du menu
+document.querySelectorAll('#nav-menu ul li a').forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('active');
+    overlay.classList.remove('active');
+  });
+  function toggleMenu() {
+  document.getElementById('nav-menu').classList.toggle('active');
+  document.querySelector('.overlay').classList.toggle('active');
+}
+});
+</script>
+
+
 </body>
 </html>
