@@ -10,31 +10,24 @@ html, body {
   display: flex;
   flex-direction: column;
 }
+
 body {
-  background: linear-gradient(135deg, #121212, #2c2c2c, rgb(105, 69, 33), #2c2c2c);
+  background: linear-gradient(120deg, #181818, #2c2c2c, hwb(35 7% 89%), #181818, #2c2c2c, #ff7f00);
   background-size: 400% 400%;
-  animation: neonBG 10s ease-in-out infinite;
+  animation: orangeBG 18s ease-in-out infinite;
   color: #f5f5f5;
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  padding-top: 215px;
-   flex: 1 0 auto;
+  padding-top: 120px; /* ajuste selon la hauteur de ton header */
+  flex: 1 0 auto;
 }
 
-@keyframes neonBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+@keyframes orangeBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
-
-
 
 
 /* ======== HEADER ======== */
@@ -367,7 +360,7 @@ header {
       height: 150px;
       object-fit: contain;
       border-radius: 5px;
-      transition: transform 0.3s ease;
+      animation: fadeInOrange 1.2s ease;
     }
     .produit img:hover {
       transform: scale(1.05);
