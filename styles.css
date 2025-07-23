@@ -172,7 +172,7 @@ nav ul li a:hover {
   background: rgb(69, 241, 46);   /* couleur identique à .prix */
   color: #fff;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 15px;
   font-weight: 600;
   padding: 0.8rem 1.2rem;
   display: inline-block;
@@ -438,6 +438,101 @@ header {
   letter-spacing: 1px;
   text-align: center;
 }
+.product-container {
+      max-width: 800px;
+      margin: auto;
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #ff7f00;
+    }
+
+   .images {
+  display: flex;
+  justify-content: center;   /* centre horizontalement */
+  align-items: center;       /* centre verticalement si la div a une hauteur */
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.images img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ff9900;
+  cursor: pointer;
+  transition: transform 0.3s;
+  animation: none;
+}
+.images img:active {
+  animation: fadeInOrange 1s;
+}
+
+    .images img:hover {
+      transform: scale(1.05);
+    }
+
+    .price {
+      color: #ff9900;
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .recommendation {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #444;
+    }
+
+    .recommendation h3 {
+      color: #ff7f00;
+    }
+
+    .recommendation a {
+      color: #ff9900;
+      text-decoration: none;
+      display: inline-block;
+      margin: 5px 0;
+      transition: color 0.3s;
+    }
+
+    .recommendation a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 10px #ff7f00;
+    }
+    .produits-ligne {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 15px;
+}
+
+.product-container {
+  width: 45%;
+  background-color: rgb(7, 6, 6);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.product-container img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .product-container {
+    width: 100%;
+  }
+}
+
+
+
 .temoignages-slider h2 {
   color: #222 !important;          
   background: none !important;      
@@ -450,3 +545,9 @@ header {
   border-bottom: none !important;
   padding-bottom: 0 !important;
 }
+.hero,
+main.product-section,
+main.produits-ligne {
+  padding-top: 120px; /* ajuste selon la hauteur réelle de ton header */
+}
+
