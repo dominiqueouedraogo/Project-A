@@ -4,26 +4,44 @@
   padding: 0;
   box-sizing: border-box;
 }
+html, body {
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 body {
-  margin: 0;
-   padding: 0;
-  background: linear-gradient(-45deg, #00c6ff, #0072ff, #f83600, #f9d423);
+  background: linear-gradient(135deg, #121212, #2c2c2c, rgb(105, 69, 33), #2c2c2c);
   background-size: 400% 400%;
-  animation: gradientBG 8s ease infinite;
+  animation: neonBG 10s ease-in-out infinite;
+  color: #f5f5f5;
   font-family: 'Poppins', sans-serif;
-  color: #333;
+  margin: 0;
+  padding: 0;
+  padding-top: 215px;
+   flex: 1 0 auto;
 }
-@keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+
+@keyframes neonBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
+
+
+
 
 /* ======== HEADER ======== */
 .header {
-  background: rgba(15, 52, 96, 0.95);
-  padding: 1rem 0;
-  position: sticky;
+  background:oklab(0% 0 0);
+  
+  
   top: 0;
   z-index: 999;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -33,9 +51,7 @@ body {
   padding-top: 0;
 position: fixed;
 }
-.section, .produits {
-  padding-top: 150px; /* adapte la valeur à la hauteur réelle du header */
-}
+
 .header .container {
   display: flex;
   align-items: center;
@@ -46,9 +62,8 @@ position: fixed;
   max-width: 150px;
   height: auto;
 }
-.hero {
-  padding-top:185px; 
-}
+
+
 
 /* ======== MENU NAV ======== */
 nav {
@@ -132,20 +147,26 @@ nav ul li a:hover {
   color: #0f3460;
   margin-bottom: 2rem;
 }
+.produit img:active {
+  transform: scale(1.05);
+}
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
 }
 .card {
-  background: #f9f9f9;
+  background: hsl(0, 0%, 0%);
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
 }
 .card:hover {
-  transform: translateY(-5px);
+  
+   transform: scale(1.05);
+  box-shadow: 0 0 20px #ff7f00, 0 0 40px #ff9900; /* halo néon au survol */
+  cursor: pointe
 }
 .card img {
   max-width: 100%;
@@ -155,26 +176,29 @@ nav ul li a:hover {
 
 /* ======== BOUTON ======== */
 .btn {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.8rem 1.2rem;
-  background: #e94560;
-  color: white;
+  background: rgb(69, 241, 46);   /* couleur identique à .prix */
+  color: #fff;
   text-decoration: none;
   border-radius: 5px;
   font-weight: 600;
+  padding: 0.8rem 1.2rem;
+  display: inline-block;
+  transition: background 0.2s;
 }
+
 .btn:hover {
-  background: #d62c4a;
+  background:rgb(69, 241, 46);   /* couleur hover si tu veux */
+  color: #fff;
 }
 
 /* ======== FOOTER ======== */
 footer {
-  background: #0f3460;
+  background: oklab(0% 0 0);
   color: #ccc;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
+   margin-top: auto;
 }
 
 /* ======== WHATSAPP FLOATING ======== */
@@ -244,14 +268,17 @@ footer {
 }
 
 .temoignages-slider {
-  background-color: #f8f8f8;
+  background-color: rgb(90, 86, 86);
   padding: 50px 20px;
   text-align: center;
 }
 .temoignages-slider h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #222;
+  text-align: left;         /* ou center, selon ton choix */
+  font-size: 1.7rem;        /* ajuste la taille si besoin */
+  color: #222;              /* couleur différente de .section h2 */
+  margin-bottom: 20px;      /* ajuste l'espacement */
+  font-weight: 600;
+  letter-spacing: 0;
 }
 .slider {
   position: relative;
@@ -261,7 +288,7 @@ footer {
 .slide {
   display: none;
   padding: 30px;
-  background-color: #fff;
+  background-color: rgb(14, 12, 1);
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: all 0.5s ease;
@@ -296,7 +323,7 @@ header {
     .categories {
       display: flex;
       justify-content: space-around;
-      background-color: #e0e0e0;
+      background-color: rgb(14, 12, 1);
       padding: 10px 0;
     }
     .categorie {
@@ -312,6 +339,7 @@ header {
       border-bottom: 2px solid #222;
       padding-bottom: 5px;
       margin-bottom: 15px;
+      background-color: rgb(14, 12, 1);
     }
     .produits {
       display: flex;
@@ -320,14 +348,20 @@ header {
       justify-content: space-around;
     }
     .produit {
-      background-color: white;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      width: 250px;
-      padding: 10px;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 5px rgba(255, 127, 0, 0.2); /* ombre douce par défaut */
+}
+
+.produit:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff7f00, 0 0 40px #ff9900; /* halo néon au survol */
+  cursor: pointer;
+}
+
     .produit img {
       max-width: 100%;
       height: 150px;
@@ -338,6 +372,10 @@ header {
     .produit img:hover {
       transform: scale(1.05);
     }
+    .produit img:active {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff7f00, 0 0 40px #ff9900;
+}
     .prix {
       color: green;
       font-weight: bold;
@@ -348,7 +386,7 @@ header {
       color: inherit;
     }
     .nos-categories {
-  background-color: #f4f4f4;
+  background-color: rgb(105, 102, 102);
   padding: 40px 20px;
   text-align: center;
 }
@@ -360,34 +398,62 @@ header {
   font-size: 16px;
   color: #444;
 }
-/* Ajoute à la fin de styles.css */
 .categorie {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.2s;
+  background-color: rgb(61, 60, 60);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff9900;
+  animation: pulseNeon 1.8s infinite ease-in-out;
+  transition: transform 0.3s;
 }
 .categorie:hover {
-  transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+  transform: scale(1.05);
 }
-.categorie img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  margin-top: 10px;
-  border-radius: 8px;
+
+@keyframes pulseNeon {
+  0% {
+    box-shadow: 0 0 8px #ff9900, 0 0 16px #ff7f00;
+  }
+  50% {
+    box-shadow: 0 0 20px #ff9900, 0 0 40px #ff7f00;
+  }
+  100% {
+    box-shadow: 0 0 8px #ff9900, 0 0 16px #ff7f00;
+  }
 }
+
 .section, .hero, .nos-categories, .temoignages-slider {
   margin-bottom: 40px;
 }
 .section h2 {
   text-align: center;
   font-size: 2rem;
-  color: #0f3460;
+  color: rgb(19, 235, 84); /* orange néon */
   margin-bottom: 2rem;
   font-weight: 600;
   letter-spacing: 1px;
+  text-shadow: 0 0 8px #ff9900;
+}
+.container h2 {
+  color: #ff7f00;
+  text-shadow: 0 0 8px #ff9900;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.temoignages-slider h2 {
+  color: #222 !important;          
+  background: none !important;      
+  text-align: center !important;     
+  text-shadow: none !important;    
+  font-size: 1.7rem !important;     
+  margin-bottom: 20px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0 !important;
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
 }
