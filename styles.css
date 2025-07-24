@@ -28,11 +28,16 @@ body {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+.texte-guide h3{
+  justify-content:center;
+  text-align
+}
 
 
 /* ======== HEADER ======== */
 .header {
-  background:oklab(0% 0 0);
+  background:rgb(241, 235, 235);
+   color: rgb(0, 0, 0);
   
   
   top: 0;
@@ -44,12 +49,22 @@ body {
   padding-top: 0;
 position: fixed;
 }
+/* ======== FOOTER ======== */
+footer {
+  background:rgb(241, 235, 235);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+   margin-top: auto;
+}
 
 .header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 1rem;
+  color: rgb(0, 0, 0);
 }
 .logo img.full-logo {
   max-width: 150px;
@@ -73,9 +88,10 @@ nav ul {
 }
 
 nav ul li a {
-  color: white;
+   color: rgb(0, 0, 0);
   text-decoration: none;
   font-weight: 600;
+   font-family: 'Poppins', sans-serif;
 }
 
 nav ul li a:hover {
@@ -192,15 +208,7 @@ nav ul li a:hover {
   color: #fff;
 }
 
-/* ======== FOOTER ======== */
-footer {
-  background: oklab(0% 0 0);
-  color: #ccc;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-   margin-top: auto;
-}
+
 
 /* ======== WHATSAPP FLOATING ======== */
 .whatsapp {
@@ -218,6 +226,10 @@ footer {
 @media screen and (max-width: 768px) {
   .menu-toggle {
     display: flex;
+  }
+    .menu-toggle span {
+    background-color: #000; /* noir */
+    box-shadow: 0 0 5px #ff9900;
   }
   #nav-menu ul {
     position: fixed;
@@ -261,8 +273,10 @@ footer {
   visibility: visible;
 }
 #nav-menu {
-  /* cacher le menu par défaut */
-}
+    background-color: #000 !important; /* Fond noir */
+    box-shadow: 0 0 15px #ff9900;
+
+  }
 #nav-menu.active {
   /* afficher le menu */
 }
@@ -345,7 +359,7 @@ header {
     .produits {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 25px;
       justify-content: space-around;
     }
     .produit {
@@ -452,7 +466,7 @@ header {
 }
 .produit img {
   background-color: rgb(69, 241, 46);
-
+ margin-bottom: 15px; 
   padding: 10px;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0, 255, 100, 0.2);
@@ -577,9 +591,10 @@ header {
 .product-container {
   width: 45%;
   background-color: rgb(7, 6, 6);
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+ box-shadow: inset 0 0 15px rgba(255, 127, 0, 0.3);
+  border-left: 5px solid #ff7f00;
 }
 
 .product-container img {
