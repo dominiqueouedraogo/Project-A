@@ -36,7 +36,7 @@ body {
 
 /* ======== HEADER ======== */
 .header {
-  background:rgb(241, 235, 235);
+  background:hsl(0, 100%, 100%);
    color: rgb(0, 0, 0);
   
   
@@ -51,7 +51,7 @@ position: fixed;
 }
 /* ======== FOOTER ======== */
 footer {
-  background:rgb(241, 235, 235);
+  background:hsl(0, 100%, 100%);
   color: rgb(0, 0, 0);
   text-align: center;
   padding: 1rem;

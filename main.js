@@ -51,3 +51,14 @@ if (temoignagesSlider) {
 
   showSlide(currentSlide);
 }
+ document.documentElement.style.scrollBehavior = "smooth";
+
+  // Ajouter loading="lazy" et classe aux images
+  document.querySelectorAll('img').forEach(img => {
+    img.loading = "lazy";
+    img.classList.add("lazy-image");
+
+    img.addEventListener('load', () => {
+      img.classList.add("loaded");
+    });
+  });
