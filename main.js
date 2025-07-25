@@ -62,3 +62,4 @@ if (temoignagesSlider) {
       img.classList.add("loaded");
     });
   });
+   
