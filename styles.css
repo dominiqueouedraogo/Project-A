@@ -19,7 +19,7 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  padding-top: 120px; /* ajuste selon la hauteur de ton header */
+  padding-top: 220px; /* ajuste selon la hauteur de ton header */
   flex: 1 0 auto;
 }
 
@@ -783,6 +783,54 @@ img {
   .content,
   .wrapper,
   section:first-of-type {
-    padding-top: 200px; /* Tu peux ajuster ici si besoin */
+    padding-top: 300px; /* Tu peux ajuster ici si besoin */
   }
 }
+/* ======== PADDING-TOP POUR QUE LE HEADER NE CACHE PAS LE TITRE (SUR MOBILE) ======== */
+@media (max-width: 768px) {
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+  }
+
+  main,
+  body > div:first-child,
+  .content,
+  .wrapper,
+  section:first-of-type {
+    padding-top: 350px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+  }
+
+  /* Cibler tous les conteneurs principaux */
+  main,
+  body > div:first-child,
+  .content,
+  .wrapper,
+  section:first-of-type,
+  .page,
+  .container,
+  .global-wrapper {
+    padding-top: 180px !important;
+  }
+
+  /* Si une image est la première chose juste après <header> */
+  header + img,
+  header + div > img,
+  header + section > img,
+  header + section,
+  header + div,
+  header + * {
+    margin-top: 180px !important;
+  }
+}
+
