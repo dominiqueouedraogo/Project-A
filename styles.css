@@ -231,6 +231,7 @@ nav ul li a:hover {
     background-color: #000; /* noir */
     box-shadow: 0 0 5px #ff9900;
   }
+   
   #nav-menu ul {
     position: fixed;
     top: 0;
@@ -809,6 +810,12 @@ img {
     width: 100%;
     z-index: 1000;
     top: 0;
+     height: 400px; /* plus petit sur mobile */
+    padding: 0 16px;
+  }
+  .logo,
+  .burger-menu {
+    transform: translateY(-5px);
   }
 
   /* Cibler tous les conteneurs principaux */
@@ -833,4 +840,38 @@ img {
     margin-top: 180px !important;
   }
 }
+@media (max-width: 768px) {
+  header {
+    height: 400px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    transform: translateY(-6px); /* remonte le logo */
+  }
+
+  .menu-toggle {
+    transform: translateY(-6px); /* remonte le burger */
+  }
+
+  body {
+    padding-top: 250px; /* pour que le contenu ne passe pas sous le header */
+  }
+  footer {
+    height: 300px;
+  padding: 0.5rem 1rem; /* réduire le padding vertical */
+  font-size: 0.8rem;    /* réduire un peu la taille du texte */
+  line-height: 1.2;     /* réduire l'espacement des lignes */
+  text-align: center;
+  
+  background: hsl(0, 100%, 100%);
+  color: rgb(0, 0, 0);
+}
+}
+
+
+
 
