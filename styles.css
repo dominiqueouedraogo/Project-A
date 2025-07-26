@@ -778,3 +778,19 @@ img {
     padding-top: 80px; /* ou la hauteur mobile du header */
   }
 }
+:root {
+  --header-height: 100px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --header-height: 120px;
+  }
+}
+
+.hero,
+.section,
+.nos-categories,
+.temoignages-slider {
+  padding-top: var(--header-height);
+}
