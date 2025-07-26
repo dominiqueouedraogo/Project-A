@@ -775,7 +775,7 @@ img {
   .section, 
   .nos-categories, 
   .temoignages-slider {
-    padding-top: 80px; /* ou la hauteur mobile du header */
+    padding-top: 130px;
   }
 }
 :root {
