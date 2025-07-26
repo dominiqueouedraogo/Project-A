@@ -763,4 +763,18 @@ img {
     font-size: 14px;
   }
 }
-
+/* Ajustement pour éviter que le header fixe cache le contenu */
+.hero, 
+.section, 
+.nos-categories, 
+.temoignages-slider {
+  padding-top: 100px; /* Ajuste la valeur selon la hauteur de ton header */
+}
+@media (max-width: 768px) {
+  .hero, 
+  .section, 
+  .nos-categories, 
+  .temoignages-slider {
+    padding-top: 80px; /* ou la hauteur mobile du header */
+  }
+}
