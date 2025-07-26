@@ -775,7 +775,7 @@ img {
   .section, 
   .nos-categories, 
   .temoignages-slider {
-    padding-top: 180px;
+   padding-top: calc(100px + 2rem);
   }
 }
 :root {
