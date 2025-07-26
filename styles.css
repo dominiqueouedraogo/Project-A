@@ -771,26 +771,18 @@ img {
   padding-top: 100px; /* Ajuste la valeur selon la hauteur de ton header */
 }
 @media (max-width: 768px) {
-  .hero, 
-  .section, 
-  .nos-categories, 
-  .temoignages-slider {
-   padding-top: calc(100px + 2rem);
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
   }
-}
-:root {
-  --header-height: 100px;
-}
 
-@media (max-width: 768px) {
-  :root {
-    --header-height: 120px;
+  main,
+  body > div:first-child,
+  .content,
+  .wrapper,
+  section:first-of-type {
+    padding-top: 200px; /* Tu peux ajuster ici si besoin */
   }
-}
-
-.hero,
-.section,
-.nos-categories,
-.temoignages-slider {
-  padding-top: var(--header-height);
 }
