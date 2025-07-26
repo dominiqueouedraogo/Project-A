@@ -842,40 +842,35 @@ img {
 }
 @media (max-width: 768px) {
   header {
-    height: 400px;
-    padding: 0 20px;
+    height: 90px; /* Réduit vraiment la hauteur ! */
+    padding: 0 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
   }
 
   .logo {
-    transform: translateY(-6px); /* remonte le logo */
+    transform: translateY(-4px);
+    max-height: 36px; /* Réduit le logo si besoin */
   }
 
   .menu-toggle {
-    transform: translateY(-6px); /* remonte le burger */
+    transform: translateY(-4px);
   }
 
   body {
-    padding-top: 250px; /* pour que le contenu ne passe pas sous le header */
+    padding-top: 65px; /* Juste suffisant pour pas cacher le contenu sous le header */
   }
+
   footer {
-    height: 300px;
-     padding-top: 5px;
-    padding-bottom: 5px;
-  padding: 0.5rem 1rem; /* réduire le padding vertical */
-  font-size: 0.8rem;    /* réduire un peu la taille du texte */
-  line-height: 1.2;     /* réduire l'espacement des lignes */
-  text-align: center;
-  
-  background: hsl(0, 100%, 100%);
-  color: rgb(0, 0, 0);
+    height: auto; /* Pas de hauteur fixe */
+    padding: 6px 10px; /* Footer compact */
+    font-size: 0.8rem;
+    line-height: 1.2;
+    text-align: center;
+    background: #fff;
+    color: #000;
+  }
 }
-}
-
-
-
-
