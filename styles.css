@@ -847,6 +847,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 
   .logo {
@@ -862,6 +864,8 @@ img {
   }
   footer {
     height: 300px;
+     padding-top: 5px;
+    padding-bottom: 5px;
   padding: 0.5rem 1rem; /* réduire le padding vertical */
   font-size: 0.8rem;    /* réduire un peu la taille du texte */
   line-height: 1.2;     /* réduire l'espacement des lignes */
