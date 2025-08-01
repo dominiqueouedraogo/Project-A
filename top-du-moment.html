@@ -39,6 +39,9 @@
         <li><a href="pc1.html">PC</a></li>
         <li><a href="electro.html">Électro</a></li>
         <li><a href="telephone.html">Téléphone</a></li>
+         <li><a href="tech-innovant.html">Tech Innovante</a></li>
+          <li><a href="maison.html">Maison & Bien-être</a></li>
+           <li><a href="mobilite.html">Mobilité & Lifestyle</a></li>
         <li><a href="top-du-moment.html">Tendances</a></li>
 
       </ul>
@@ -116,17 +119,19 @@
   }
 
   /* Responsive : sur petits écrans, empiler verticalement */
-  @media (max-width: 600px) {
+  @media (max-width: 540px) {
     .site-header {
       flex-direction: column;
       align-items: center;
       gap: 10px;
     }
     .search-bar {
-      margin-left: 0;
-      width: 100%;
-      max-width: 100%;
-    }
+    margin: 0 auto; /* Centre horizontalement */
+    padding: 0 15px; /* Ajoute de l'espace aux bords */
+    width: 100%;
+    max-width: 90%; /* Limite la largeur max à 90% de l'écran */
+    box-sizing: border-box; /* pour que padding ne casse pas la largeur */
+  }
     .search-bar form {
       flex-direction: column;
       gap: 10px;
@@ -155,11 +160,11 @@
 <div class="overlay" onclick="toggleMenu()"></div>
 <!-- ...existing code... -->
 
-    <section class="hero">
+    <section class="hero" id= "tendances">
   <div class="container">
     <section class="accueil tendances">
   <div class="container">
-    <h2>
+    <h2 class="titre-tendances">
       <span class="highlight">Découvrez les produits</span><br>
       <span class="highlight2">les plus tendances du moment !</span>
     </h2>
@@ -169,12 +174,12 @@
     <a href="#tendances-tech" class="btn" style="margin-top: 25px;">Explorer maintenant</a>
   </div>
 </section>
-s
+
    <p class="accueil tendances-intro" style="color:black;">📈 Les meilleures tendances du moment vous attendent !</p>
 
     <section class="guide tendances-guide">
   <div class="container">
-    <h3>Pourquoi ces produits sont-ils incontournables ?</h3>
+    <h3 class="titre-guide">Pourquoi ces produits sont-ils incontournables ?</h3>
     <p class="texte-guide tendances-texte">
       Chaque article présenté ici est le résultat d'une analyse des meilleures ventes, des avis clients et des tendances actuelles du marché. Que vous soyez passionné de tech, de gaming ou de lifestyle, vous trouverez ici ce qui fait vibrer les internautes en ce moment.
     </p>
@@ -197,7 +202,7 @@ s
 
 <!-- 🛍️ Catégories en haut -->
 <div class="categories">
-  <div class="categorie"><a href="pc1.html">PC</a></div>
+ 
   <div class="categorie"><a href="tech-innovant.html">Tech Innovante</a> </div>
   <div class="categorie"><a href="maison.html"> Maison & Bien-être</a></div>
   <div class="categorie"><a href="mobilite.html"> Mobilité & Lifestyle</a></div>
@@ -346,7 +351,7 @@ s
 
 <!-- SECTION SLIDER FLÈCHES TÉMOIGNAGES -->
 <section class="temoignages-slider">
-  <h2>Ce que disent nos premiers visiteurs</h2>
+  <h2 class="titre-temoignages">Ce que disent nos premiers visiteurs</h2>
 
   <div class="slider">
     <button class="prev" onclick="changeSlide(-1)">&#10094;</button>

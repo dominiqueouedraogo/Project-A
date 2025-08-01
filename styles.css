@@ -1600,7 +1600,27 @@ font: size 20px;
     font-size: 1.2rem;
     color:black;
   }
+  #tendances-tech,
+  #tendances-maison,
+  #tendances-lifestyle {
+    margin-top: -170px;
+  }
+   h2.titre-tendances {
+    margin-top: -250px;
+  }
+   h3.titre-guide {
+    margin-top: -170px;
+    color: #FFD700 !important; 
+  }
+    h2.titre-temoignages {
+    margin-top: -80px;
+  }
+   
   
+
+  
+ 
+ 
 
   .tendances-guide h3 {
     font-size: 1.8rem;
@@ -1624,9 +1644,6 @@ font: size 20px;
     color: #fff;
     font-size: 16px;
     text-decoration: none;
-  }
-  .accueil tendances {
-    padding-top: -150px;
   }
  
 
