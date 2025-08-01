@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Découvrez les meilleurs produits tendance en Tech, Gaming, Beauté et Business. AffiliaPro vous guide vers les meilleures offres Amazon et bien plus.">
+  <meta name="keywords" content="produits tech, gaming, beauté, affiliation Amazon, entrepreneuriat, gadgets tendance, bons plans, AffiliaPro">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="AffiliaPro - Produits Tech, Beauté & Business à Prix Malins">
+  <meta property="og:description" content="Explorez une sélection de produits tendance et profitez des meilleures offres du moment avec AffiliaPro.">
+  <meta property="og:image" content="https://www.tonsite.com/images/og-image.jpg">
+  <meta property="og:url" content="https://www.tonsite.com">
+  <meta property="og:type" content="website">
+  <title>PC | AffiliaPro</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+  <div class="logo-container">
+   <img src="image/logo.png" alt="Affiliapro" class="full-logo" loading="lazy">
+  </div>
+  <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+   <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="pc1.html">PC</a></li>
+        <li><a href="electro.html">Électro</a></li>
+        <li><a href="telephone.html">Téléphone</a></li>
+        <li><a href="top-du-moment.html">Tendances</a></li>
+
+      </ul>
+    </nav>
+
+  <div class="search-bar">
+    <form id="searchForm">
+      <input type="text" id="searchInput" placeholder="Rechercher un produit..." required />
+      <button type="submit">Rechercher</button>
+    </form>
+  </div>
+</header>
+
+<style>
+  /* Conteneur global */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background:hsl(0, 100%, 100%);
+    flex-wrap: wrap; /* permet le retour à la ligne sur mobile */
+  }
+
+  /* Logo */
+  .logo-container {
+    flex: 0 0 auto;
+    max-width: 150px;
+  }
+  .logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Barre de recherche */
+  .search-bar {
+    flex: 1 1 300px; /* s’étire, min 300px */
+    margin-left: 20px;
+    background-color: #070303;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 500px;
+  }
+
+  .search-bar form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .search-bar input[type="text"] {
+    padding: 10px;
+    flex-grow: 1;
+    min-width: 150px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+
+  .search-bar button {
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .search-bar button:hover {
+    background-color: darkorange;
+  }
+
+  /* Responsive : sur petits écrans, empiler verticalement */
+  @media (max-width: 600px) {
+    .site-header {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .search-bar {
+      margin-left: 0;
+      width: 100%;
+      max-width: 100%;
+    }
+    .search-bar form {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .search-bar input[type="text"],
+    .search-bar button {
+      width: 100%;
+    }
+  }
+</style>
+
+<script>
+  document.getElementById('searchForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const keyword = document.getElementById('searchInput').value.trim();
+    if (keyword) {
+      const encodedKeyword = encodeURIComponent(keyword);
+      const trackingId = 'dominiqueodg1-21'; // Remplace par ton vrai tag affilié Amazon
+      const amazonUrl = `https://www.amazon.fr/s?k=${encodedKeyword}&tag=${trackingId}`;
+     window.open(amazonUrl, '_blank');
+
+    }
+  });
+</script>
+  <div class="overlay" onclick="toggleMenu()"></div>
+
+  <!-- Produits côte à côte -->
+  <main class="product-section produits-ligne">
+    <div class="product-container">
+       <span class="badge">🔥 Choix Amazon</span>
+      <div class="images">
+        <img src="image/G3.jpg" alt="Asus ROG Avant">
+        
+      </div>
+      <h2>🍕 G3 Ferrari G10006 Pizza Express Delizia – Une Pizza Parfaite en 5 Minutes</h2>
+      <p><strong>Puissance :</strong> 1200 W </p>
+      <p><strong>Température : </strong> Jusqu’à 400°C (thermostat réglable)</p>
+      <p><strong>Fonctionnalités : </strong>Double résistance, cuisson rapide </p>
+      <p><strong> Accessoires :</strong>  Spatules + livre de recettes inclus</p>
+       <p><strong> Couleur :</strong>  Rouge</p>
+      
+      
+      <h3>Description :</h3>
+      <p>Le G3 Ferrari Pizza Express Delizia G10006 est un four à pizza puissant et compact conçu pour cuire des pizzas savoureuses comme au feu de bois en seulement 5 minutes. Grâce à ses 1200 W de puissance, son thermostat réglable jusqu’à 400°C, et ses résistances supérieure et inférieure, il garantit une cuisson rapide et croustillante.
+
+Idéal pour les amateurs de pizzas faites maison. Son design rouge brillant et ses accessoires inclus (spatules + livre de recettes) en font un appareil pratique et ludique.</p>
+      <div class="recommendation">
+        <h3>Recommandations :</h3>
+        <p>Amateurs de pizza maison, familles, soirées conviviales.</p>
+        <a href="https://amzn.to/4lhYwhr">🍕 Bestron APZ400 – Mini four à pizza, 1800 W</a><br>
+        <a href="https://amzn.to/4o6geqA">🍕Cecotec Four Électrique pour Pizza Fun</a><br>
+         <p class="prix"><a href="https://amzn.to/4lOzveM" class="btn" target="_blank" rel="noopener noreferrer">Voir l'offre</a></p>
+      </div>
+    </div>
+
+    <div class="product-container">
+       <span class="badge">🔥 Choix Amazon</span>
+      <div class="images">
+        <img src="image/four.jpg" alt="Asus ROG Avant">
+       
+      </div>
+      <h2>🍕 Cecotec Fun Pizza&Co – Le Four Électrique Idéal pour Vos Soirées Pizza</h2>
+      <p><strong>Puissance : </strong>1800 W </p>
+      <p><strong> Diamètre de cuisson :</strong> Ø 31 cm</p>
+      <p><strong>Température :</strong> Réglable manuellement</p>
+       <p><strong>Minuterie :</strong> Jusqu’à 30 minutes</p>
+       <p><strong>Revêtement : </strong>Rockstone antiadhésif </p>
+       <p><strong>Fonctionnalités :  </strong> Ouverture 180°, deux plaques de cuisson </p>
+
+      <h3>Description :</h3>
+      <p>Le Cecotec Fun Pizza&Co est un four électrique multifonction parfait pour préparer des pizzas maison croustillantes et savoureuses. Grâce à ses 1800 W de puissance, son revêtement Rockstone antiadhésif et sa température réglable, il garantit une cuisson homogène et rapide.
+
+Son ouverture à 180° avec deux plaques permet également de cuire d’autres plats : tartes, crêpes, omelettes, etc. Sa minuterie intégrée assure un contrôle précis pour éviter les cuissons excessives.</p>
+      <div class="recommendation">
+        <h3>Recommandations :</h3>
+        <p>Les familles, les passionnés de cuisine maison, les soirées pizza et les repas rapides.</p>
+        <a href="https://amzn.to/4lOzveM">🍕 G3 Ferrari Pizza Express Delizia – 400°C, cuisson en 5 minutes</a><br>
+        <a href="https://amzn.to/4lTgyHU">🍕 Tristar PZ-2881 – Four à pizza et à tarte, 30 cm</a><br>
+        <p class="prix"> <a href="https://amzn.to/4o6geqA" class="btn" target="_blank" rel="noopener noreferrer">Voir l'offre</a></p>
+      </div>
+    </div>
+    <div class="product-container">
+       <span class="badge">🔥 Choix Amazon</span>
+      <div class="images">
+        <img src="image/propower.jpg" alt="Asus ROG Avant">
+       
+      </div>
+      <h2>🍖 Bosch ProPower MFW67440 – Hachoir à Viande Puissant et Polyvalent</h2>
+      <p><strong>Puissance : </strong>700 W </p>
+      <p><strong> Débit : </strong>Jusqu’à 3,5 kg de viande/minute</p>
+      <p><strong>Fonctionnalités : </strong> Polyvalent – Accessoires inclus</p>
+       <p><strong>Couleur :</strong>  Noir</p>
+       <p><strong> Classe énergétique : </strong> A</p>
+
+
+      <h3>Description :</h3>
+      <p>Le Bosch ProPower MFW67440 est un hachoir à viande électrique puissant conçu pour les cuisiniers exigeants. Grâce à sa puissance de 700 W et son débit allant jusqu’à 3,5 kg/min, il permet de hacher rapidement de grandes quantités de viande, idéale pour les préparations maison (saucisses, boulettes, farces).
+
+Sa conception robuste et ses accessoires multiples en font un appareil polyvalent, pratique et durable. Son design noir élégant s’intègre facilement dans toutes les cuisines.</p>
+      <div class="recommendation">
+        <h3>Recommandations :</h3>
+        <p>Familles, amateurs de cuisine maison, passionnés de charcuterie et viande fraîche.</p>
+        <a href="https://amzn.to/40GrhNg">🍖 Moulinex HV8 – 2200W, accessoires inclus</a><br>
+        <a href="https://amzn.to/4lYlRpl">🍖 Kenwood Titanium Chef Baker ,1200W</a><br>
+         <p class="prix"><a href="https://amzn.to/40DUPuU" class="btn" target="_blank" rel="noopener noreferrer">Voir l'offre</a></p>
+      </div>
+    </div>
+     <div class="product-container">
+       <span class="badge">🔥 Choix Amazon</span>
+      <div class="images">
+        <img src="image/edihome.jpg" alt="Asus ROG Avant">
+       
+      </div>
+      <h2>🍖 Edihome – Hachoir à Viande Électrique Professionnel 2200W</h2>
+      <p><strong>Puissance : </strong>2200 W </p>
+      <p><strong>Accessoires inclus : </strong> Poussoir à saucisse + 3 plaques de coupe</p>
+      <p><strong>Température :</strong> Réglable manuellement</p>
+       <p><strong>Couleurs : </strong>Noir / Blanc</p>
+       
+       <p><strong>Fonctionnalités :  </strong> Hachoir multifonction (viande, saucisses, farces, etc.) </p>
+
+      <h3>Description :</h3>
+      <p>Le hachoir à viande électrique Edihome est un appareil professionnel alliant puissance et polyvalence. Avec ses 2200 W, il permet de hacher rapidement tout type de viande et de réaliser des préparations maison comme les saucisses, boulettes, farces ou terrines.
+
+Il est livré avec 3 plaques de coupe pour différents niveaux de hachage et un poussoir à saucisse, idéal pour les cuisiniers qui aiment tout faire eux-mêmes. Son design compact et moderne (noir/blanc) s’adapte à toutes les cuisine</p>
+      <div class="recommendation">
+        <h3>Recommandations :</h3>
+        <p>Familles, amateurs de cuisine maison, préparations variées et usage régulier.</p>
+        <a href="https://amzn.to/40DUPuU">🍖 Bosch ProPower MFW67440 – 700 W, débit 3,5 kg/min</a><br>
+        <a href="https://amzn.to/46oWhVE">🍖 COOCHEER Hachoir à viande électrique – 2000 W,  multifonction</a><br>
+         <p class="prix"><a href="https://amzn.to/4meZFqE" class="btn" target="_blank" rel="noopener noreferrer">Voir l'offre</a></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Témoignages -->
+  <section class="temoignages-slider">
+    <h2>Ce que disent nos premiers visiteurs</h2>
+    <div class="slider">
+      <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+      <div class="slide active">
+        <p class="etoiles">⭐️⭐️⭐️⭐️⭐️</p>
+        <p><strong>Fatou K. (Abidjan)</strong> : “Le site est clair, les produits sont bien présentés. J’ai découvert plein d’idées d’achat !”</p>
+      </div>
+      <div class="slide">
+        <p class="etoiles">⭐️⭐️⭐️⭐️☆</p>
+        <p><strong>Jean M. (Bouaké)</strong> : “J’ai recommandé ce site à mes amis, il regroupe tout ce qu’on aime : tech, beauté, entrepreneuriat.”</p>
+      </div>
+      <div class="slide">
+        <p class="etoiles">⭐️⭐️⭐️⭐️⭐️</p>
+        <p><strong>Alima D. (Yamoussoukro)</strong> : “Super plateforme pour repérer les tendances avant tout le monde. Bravo Affiliapro !”</p>
+      </div>
+      <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>@ 2025 Affiliapro - Tous droits réservés. 
+        <a href="mentions-legales.html">Mentions légales</a> | 
+        <a href="a-propos.html">À propos</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/2250700000000?text=Bonjour%20AffiliaPro%2C%20je%20souhaite%20en%20savoir%20plus%20!" class="whatsapp" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+  </a>
+
+  <script src="main.js"></script>
+</body>
+</html>

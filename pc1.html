@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Découvrez les meilleurs produits tendance en Tech, Gaming, Beauté et Business. AffiliaPro vous guide vers les meilleures offres Amazon et bien plus.">
+  <meta name="keywords" content="produits tech, gaming, beauté, affiliation Amazon, entrepreneuriat, gadgets tendance, bons plans, AffiliaPro">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="AffiliaPro - Produits Tech, Beauté & Business à Prix Malins">
+  <meta property="og:description" content="Explorez une sélection de produits tendance et profitez des meilleures offres du moment avec AffiliaPro.">
+  <meta property="og:image" content="https://www.tonsite.com/images/og-image.jpg">
+  <meta property="og:url" content="https://www.tonsite.com">
+  <meta property="og:type" content="website">
+  <title>PC | AffiliaPro</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Header -->
+ <header class="header">
+  <div class="logo-container">
+   <img src="image/logo.png" alt="Affiliapro" class="full-logo" loading="lazy">
+  </div>
+  <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+   <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="pc1.html">PC</a></li>
+        <li><a href="electro.html">Électro</a></li>
+        <li><a href="telephone.html">Téléphone</a></li>
+        <li><a href="top-du-moment.html">Tendances</a></li>
+
+      </ul>
+    </nav>
+
+  <div class="search-bar">
+    <form id="searchForm">
+      <input type="text" id="searchInput" placeholder="Rechercher un produit..." required />
+      <button type="submit">Rechercher</button>
+    </form>
+  </div>
+</header>
+
+<style>
+  /* Conteneur global */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background:hsl(0, 100%, 100%);
+    flex-wrap: wrap; /* permet le retour à la ligne sur mobile */
+  }
+
+  /* Logo */
+  .logo-container {
+    flex: 0 0 auto;
+    max-width: 150px;
+  }
+  .logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Barre de recherche */
+  .search-bar {
+    flex: 1 1 300px; /* s’étire, min 300px */
+    margin-left: 20px;
+    background-color: #070303;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 500px;
+  }
+
+  .search-bar form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .search-bar input[type="text"] {
+    padding: 10px;
+    flex-grow: 1;
+    min-width: 150px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+
+  .search-bar button {
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .search-bar button:hover {
+    background-color: darkorange;
+  }
+
+  /* Responsive : sur petits écrans, empiler verticalement */
+ @media (max-width: 540px)  {
+    .site-header {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .search-bar {
+      margin-left: 0;
+     
+      width: 100%;
+      max-width: 100%;
+    }
+    .search-bar form {
+      flex-direction: column;
+      gap: 10px;
+      
+    }
+    .search-bar input[type="text"],
+    .search-bar button {
+      width: 100%;
+    }
+  }
+</style>
+
+<script>
+  document.getElementById('searchForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const keyword = document.getElementById('searchInput').value.trim();
+    if (keyword) {
+      const encodedKeyword = encodeURIComponent(keyword);
+      const trackingId = 'dominiqueodg1-21'; // Remplace par ton vrai tag affilié Amazon
+      const amazonUrl = `https://www.amazon.fr/s?k=${encodedKeyword}&tag=${trackingId}`;
+     window.open(amazonUrl, '_blank');
+
+    }
+  });
+</script>
+  <div class="overlay" onclick="toggleMenu()"></div>
+
+  <!-- Produits côte à côte -->
+  <main class="product-section produits-ligne">
+    <div class="product-container">
+  <span class="badge">🔥 Meilleure vente</span>
+
+  <div class="images">
+    <img src="image/ordi.jpg" alt="Asus ROG Avant">
+  </div>
+  
+  <h2>Dell Inspiron 15 3535 – Performance et Élégance au Quotidien</h2>
+  <p><strong>RAM :</strong> 8 Go</p>
+  <p><strong>Stockage :</strong> 512 Go SSD</p>
+  <p><strong>Carte Graphique :</strong> AMD Radeon intégrée</p>
+  
+  <h3>Description :</h3>
+  <p>Le Dell Inspiron 15 3535 est un ordinateur portable 15,6" Full HD pensé pour ceux qui recherchent un équilibre entre puissance, fluidité et design sobre. Propulsé par un processeur AMD Ryzen 5 7520U, 8 Go de RAM et un SSD rapide de 512 Go, il assure des performances optimales pour le multitâche, la bureautique, le streaming et plus encore.
+
+  Son design noir élégant et son clavier AZERTY français offrent un confort d'utilisation parfait pour un usage quotidien.</p>
+
+  <div class="recommendation">
+    <h3>Recommandations :</h3>
+    <p>Étudiants, professionnels nomades, et utilisateurs polyvalents à la recherche d’un laptop performant et fiable.</p>
+    <a href="https://amzn.to/4mtZJmP">💻 HP Pavilion 15 – Intel Core i5, SSD 512 Go</a><br>
+    <a href="https://amzn.to/3GO5fBr">💻 Lenovo IdeaPad 5 – Ryzen 5, 16 Go RAM</a><br>
+    <p class="prix">
+      <a href="https://www.amazon.fr/Dell-Inspiron-Ordinateur-Processeur-Graphique/dp/B0CZC5NV1H?linkCode=ll1&tag=dominiqueodg1-21" class="btn" target="_blank" rel="noopener noreferrer">Voir l'offre</a>
+    </p>
+  </div>
+</div>
+
+    </div>
+     
+
+    <div class="product-container">
+       <span class="badge">Meilleure vente 🆕</span>
+      <div class="images">
+       
+        <img src="image/pc.jpg" alt="Asus ROG Avant">
+        
+      </div>
+      <h2>💻 Acer Aspire 3 A317-55P-C8DB – Grand Écran, Performance Essentielle</h2>
+      <p><strong>RAM :</strong> 4 Go</p>
+      <p><strong>Stockage :</strong> 128 Go SSD</p>
+      <p><strong>Carte Graphique :</strong> Intel UHD Graphics</p>
+      
+      <h3>Description :</h3>
+      <p>Boostez votre productivité avec le Acer Aspire 3 A317-55P-C8DB, un ordinateur portable 17,3" Full HD IPS pensé pour la bureautique, les études et la navigation quotidienne. Son processeur Intel Celeron N100, ses 4 Go de RAM, et son SSD de 128 Go offrent une expérience fluide pour les tâches simples. Son grand écran améliore le confort visuel pour le travail ou le divertissement.</p>
+      <div class="recommendation">
+        <h3>Recommandations :</h3>
+        <p>Étudiants, télétravailleurs, et utilisateurs à la recherche d’un PC abordable et fiable.</p>
+        <a href="https://amzn.to/4kZCTCd">💻 Lenovo IdeaPad 3 – 8 Go RAM, SSD 256 Go</a><br>
+        <a href="produit3.html">💻 HP 17s – Écran 17", Windows 11, bon rapport qualité/prix</a><br>
+         <p class="prix"><a href="https://amzn.to/4f3LJgV" class="btn" target="_blank" rel="noopener noreferrer">Voir l'offre</a></p>
+      </div>
+    </div>
+    <div class="product-container">
+      <span class="badge">🔥 Exclusivité</span>
+      <div class="images">
+        <img src="image/cybog1.jpg" alt="Asus ROG Avant">
+        
+      </div>
+      <h2>🎮 MSI Cyborg 15 A13VFK-1691FR – Vitesse, Puissance et Design Futuriste</h2>
+      <p><strong>RAM :</strong>16 Go DDR5</p>
+      <p><strong>Stockage :</strong> 512 Go SSD</p>
+      <p><strong>Carte Graphique :</strong>  NVIDIA GeForce RTX 4060 8 Go</p>
+      <p><strong>Processeur : </strong>Intel Core i7-13620H  </p>
+      
+      <h3>Description :</h3>
+      <p>Le MSI Cyborg 15 A13VFK-1691FR est un PC portable gamer taillé pour la performance avec son processeur Intel Core i7 de 13e génération, ses 16 Go de RAM DDR5 ultra-rapide, et sa carte graphique NVIDIA RTX 4060.
+Son écran 144Hz Full HD assure une fluidité parfaite pour le gaming compétitif. Son design futuriste et son système de refroidissement optimisé en font un allié puissant pour les jeux AAA, le montage vidéo et la création.</p>
+      <div class="recommendation">
+        <h3>Recommandations :</h3>
+        <p>Gamers avancés, monteurs vidéo, créateurs de contenu, et utilisateurs à la recherche de performances haut de gamme dans un design innovant.</p>
+        <a href="https://amzn.to/3Ur6zx4">💻 Acer Nitro V 15 – i9, RTX 4060, 165Hz</a><br>
+        <a href="https://amzn.to/40WjwD5">💻 Asus ROG Strix G15 – Ryzen 7, RTX 4050</a><br>
+         <p class="prix"><a href="https://amzn.to/4f5xh7W" class="btn" target="_blank" rel="noopener noreferrer">Voir l'offre</a></p>
+      </div>
+    </div>
+    <div class="product-container">
+      <span class="badge">🔥Exclusivité</span>
+      <div class="images">
+        <img src="image/acer v.jpg" alt="Asus ROG Avant">
+        
+      </div>
+      <h2>🎮 Acer Nitro V 15 ANV15-51-9467 – Gaming Haute Performance en Full HD 165Hz</h2>
+      <p><strong>RAM :</strong> 16 Go</p>
+      <p><strong>Stockage :</strong> 512 Go SSD</p>
+      <p><strong>Carte Graphique :</strong>  NVIDIA GeForce RTX 4060 8 Go</p>
+       <p><strong>Processeur : </strong>  Intel Core i9-13900H </p>
+      
+      <h3>Description :</h3>
+      <p>Le Acer Nitro V 15 est un ordinateur portable gaming 15,6" Full HD 165Hz conçu pour les gamers exigeants. Avec son puissant processeur Intel Core i9-13900H, ses 16 Go de RAM, son SSD de 512 Go, et sa carte graphique NVIDIA RTX 4060, il garantit des performances exceptionnelles sur les jeux les plus récents.
+Son écran 165Hz offre une fluidité optimale pour une immersion totale dans vos parties.
+
+Inclus : 3 mois de Xbox Game Pass pour accéder à une large bibliothèque de jeux dès l'achat.</p>
+      <div class="recommendation">
+        <h3>Recommandations :</h3>
+        <p>Gamers passionnés, streamers, créateurs de contenu, et utilisateurs à la recherche de performances haut de gamme.</p>
+        <a href="H1D4Bhttps://amzn.to/3I">💻 Asus TUF F15 – i7, RTX 4050</a><br>
+        <a href="https://amzn.to/4f5UPJT">💻MSI Cyborg 15 – 16 Go RAM, RTX 4060</a><br>
+        <p class="prix"><a href="https://amzn.to/4f5xh7W" class="btn" target="_blank" rel="noopener noreferrer">Voir l'offre</a></p>
+      </div>
+    </div>
+    <div class="product-container">
+      <span class="badge">🔥 Exclusivité</span>
+      <div class="images">
+        <img src="image/hp1.jpg" alt="Asus ROG Avant">
+        
+      </div>
+      <h2>💻 HP 15,6" FHD – Performance Équilibrée pour le Quotidien</h2>
+      <p><strong>RAM :</strong>  8 Go DDR4</p>
+      <p><strong>Stockage :</strong> 1 To SSD</p>
+      <p><strong>Carte Graphique :</strong> Intel® Iris® Xe</p>
+       <p><strong>Processeur : </strong>  Intel® Core™ i5-1235U </p>
+      
+      <h3>Description :</h3>
+      <p>Le HP 15,6 pouces Full HD est un ordinateur portable polyvalent conçu pour un usage fluide et efficace au quotidien. Propulsé par un Intel Core i5-1235U, 8 Go de RAM DDR4, et un SSD ultra-rapide de 1 To, il offre un excellent équilibre entre performance, rapidité et capacité de stockage. Sa carte graphique Intel Iris Xe améliore l’affichage pour la bureautique, le multimédia et le multitâche.
+
+Avec son design élégant en argent et Windows 11 Home préinstallé, c’est le compagnon idéal pour les étudiants, les professionnels et les utilisateurs exigeants.</p>
+      <div class="recommendation">
+        <h3>Recommandations :</h3>
+        <p>Bureautique, télétravail, visioconférences, streaming, stockage massif de fichiers.</p>
+        <a href="https://amzn.to/4kZCTCd">💻Lenovo IdeaPad 3 – Ryzen 5, SSD 512 Go </a><br>
+        <a href="https://www.amazon.fr/Dell-Inspiron-Ordinateur-Processeur-Graphique/dp/B0CZC5NV1H?crid=KLA7IRRREE86&dib=eyJ2IjoiMSJ9._8TGDou0LQOAjLY_-n8INAaTzDO_ylBVIFvjNfTyEJGkYfG97lTVFiUiOH7-93D3lkOulthOVQa8VsGl4i8o3IkVtZSkC-9fx6RxZzR0zVObaK---7Owy7vfaBZNJ60U6CjHIWEt6Z4f-hmwp6OUAJsQjWaEkFn5H7vx8X151g5ViY5BQKg4kaeMJB-jmf7E4Xm2-6bR7JiSuKp2nyLocJVyr_viaf0MQLaEzXgsMTIrG6b64rKByTl_fvwX24m4hoENiQMuwBarE5-_iGGoDxMcCn9wXEFngBIE9ZE-5vY.3EeJNrvuvc3o-even29Nm7EUfpivqIhgXfaoZu3wXWY&dib_tag=se&keywords=ordinateur%2Blaptop&qid=1751544792&sprefix=%2Caps%2C1501&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll1&tag=dominiqueodg1-21&linkId=e40a2bdb9c289cfdfdc10246704c8253&language=fr_FR&ref_=as_li_ss_tl">💻 Dell Inspiron 15 – i5, 512 Go SSD, design premium</a><br>
+        <p class="prix"><a href="https://amzn.to/4o5L7ve" class="btn" target="_blank" rel="noopener noreferrer">Voir l'offre</a></p>
+      </div>
+    </div>
+<div class="product-container">
+  <span class="badge">🔥 Choix Amazon</span>
+      <div class="images">
+        <img src="image/energybook.jpg" alt="Asus ROG Avant">
+        
+      </div>
+      <h2>💻 Energizer EnergyBook 17 – L'essentiel au Format Grand Écran</h2>
+      <p><strong>RAM :</strong> 4 Go</p>
+      <p><strong>Stockage :</strong> 128 Go SSD</p>
+      <p><strong>Carte Graphique :</strong>  Intel UHD intégrée</p>
+       <p><strong>Processeur : </strong> Intel Celeron </p>
+      
+      <h3>Description :</h3>
+      <p>Le Energizer EnergyBook 17 est un ordinateur portable 17,3" HD+ conçu pour les besoins essentiels du quotidien. Avec son processeur Intel Celeron, 4 Go de RAM et son SSD de 128 Go, il offre une utilisation fluide pour la bureautique, les recherches internet, les vidéos et l’apprentissage à distance.
+
+Équipé d’un clavier AZERTY, de ports USB 3.0 et HDMI, et tournant sous Windows 11, ce laptop léger et autonome est parfait pour une utilisation simple et mobile.</p>
+      <div class="recommendation">
+        <h3>Recommandations :</h3>
+        <p>Débutants, étudiants, utilisateurs à petit budget, tâches bureautiques simples.</p>
+        <a href="https://amzn.to/4f3LJgV">💻 Acer Aspire 3 – 17", SSD 128 Go</a><br>
+        <a href="https://amzn.to/4o3DXrh">💻 Acer Chromebook 314 – Celeron, 4 Go RAM</a><br>
+        <p class="prix"><a href="https://amzn.to/44MrTTR" class="btn" target="_blank" rel="noopener noreferrer">Voir l'offre</a></p>
+      </div>
+    </div>
+    <div class="product-container">
+  <span class="badge">🔥 Choix Amazon</span>
+      <div class="images">
+        <img src="image/acer4.jpg" alt="Asus ROG Avant">
+        
+      </div>
+      <h2>💻 Acer Chromebook 314 CBOA314-1H-C8XY – Simplicité, Rapidité et Mobilité</h2>
+      <p><strong>RAM :</strong> 4 Go</p>
+      <p><strong>Stockage :</strong> 128 Go eMMC</p>
+      <p><strong>Carte Graphique :</strong>  Intel UHD Graphics</p>
+       <p><strong>Processeur : </strong> Intel Celeron N4500 </p>
+       <p><strong>Système :  </strong> Chrome OS </p>
+      
+      <h3>Description :</h3>
+      <p>Le Acer Chromebook 314 est un PC portable 14 pouces Full HD léger, rapide et idéal pour le travail en ligne et la navigation. Propulsé par un Intel Celeron N4500, 4 Go de RAM, et 128 Go de stockage eMMC, il offre un démarrage rapide et une excellente autonomie grâce à Chrome OS.
+
+Parfait pour les étudiants, les nomades du web ou ceux qui utilisent principalement des services cloud. Son clavier AZERTY et son design gris élégant en font un outil pratique pour tous les jours.</p>
+      <div class="recommendation">
+        <h3>Recommandations :</h3>
+        <p>Étudiants, usage éducatif, navigation web, Google Workspace, utilisateurs de cloud.</p>
+        <a href="https://amzn.to/4f3LJgV">💻 Acer Aspire 3 – 17", SSD 128 Go</a><br>
+        <a href="https://amzn.to/4o3DXrh">💻 Acer Chromebook 314 – Celeron, 4 Go RAM</a><br>
+        <p class="prix"><a href="https://amzn.to/3IM1NrK" class="btn" target="_blank" rel="noopener noreferrer">Voir l'offre</a></p>
+      </div>
+    </div>
+    <div class="product-container">
+  <span class="badge">🔥 Choix Amazon</span>
+      <div class="images">
+        <img src="image/dell15.jpg" alt="Asus ROG Avant">
+        
+      </div>
+      <h2>💻 Dell XPS 15 9530 – Puissance, Précision et Élégance en OLED 3.5K</h2>
+      <p><strong>RAM :</strong> 16 Go</p>
+      <p><strong>Stockage :</strong> 1 To SSD</p>
+      <p><strong>Carte Graphique :</strong> NVIDIA GeForce RTX 4060 8 Go</p>
+       <p><strong>Processeur : </strong> Intel Core i7 </p>
+       <p><strong>Système :  </strong> Windows 11 Home </p>
+       <p><strong>  Écran : </strong> 15,6" OLED Tactile – 3.5K (3456 x 2160)</p>
+      
+      <h3>Description :</h3>
+      <p>Le Dell XPS 15 9530 est un ordinateur portable haut de gamme alliant design premium, écran OLED tactile 3.5K ultra-précis, et puissance de calcul avancée. Avec un Intel Core i7, 16 Go de RAM, un SSD de 1 To, et une carte graphique NVIDIA RTX 4060, il est taillé pour le multitâche intensif, la création graphique, le montage vidéo 4K et le gaming haut niveau.
+
+Son design Silver & Black, son clavier AZERTY, et sa construction robuste en font un allié premium pour les utilisateurs exigeants.</p>
+      <div class="recommendation">
+        <h3>Recommandations :</h3>
+        <p>Créateurs de contenu, monteurs vidéo, développeurs, gamers et professionnels exigeants.</p>
+        <a href="https://amzn.to/45bGAPv">💻 SAMSUNG Galaxy Book4 – 8Go RAM, 256Go SSD</a><br>
+        <a href="https://amzn.to/4lYHiGE">💻MSI Creator Z16 – 16 Go RAM Windows 11 Pro</a><br>
+        <p class="prix"><a href="https://amzn.to/3IOzVmE" class="btn" target="_blank" rel="noopener noreferrer">Voir l'offre</a></p>
+      </div>
+    </div>
+    <div class="product-container">
+  <span class="badge">🔥 Choix Amazon</span>
+      <div class="images">
+        <img src="image/hp SP.jpg" alt="Asus ROG Avant">
+        
+      </div>
+      <h2>💻 HP Spectre x360 14-eu0173ng – Élégance, Puissance et Flexibilité en OLED 2.8K</h2>
+      <p><strong>RAM :</strong> 16 Go</p>
+      <p><strong>Stockage :</strong>512 Go SSD</p>
+      <p><strong>Inclus : </strong>Stylet HP + Hub USB-C</p>
+       <p><strong>Processeur : </strong> Intel Core Ultra 7 155H </p>
+       <p><strong>Système :  </strong> Windows 11 </p>
+       <p><strong>  Écran : </strong> 14" OLED tactile – 2.8K (2880 x 1800) – 120Hz</p>
+      
+      <h3>Description :</h3>
+      <p>Le HP Spectre x360 14-eu0173ng est un ultrabook convertible haut de gamme conçu pour allier performance, mobilité et design premium. Son écran OLED tactile 2.8K 120Hz offre une qualité d’image exceptionnelle, idéale pour les créateurs, professionnels et étudiants exigeants.
+
+Équipé du dernier Intel Ultra 7-155H, de 16 Go de RAM et d’un SSD de 512 Go, il assure une rapidité impressionnante pour le multitâche, la productivité et la création. Le tout livré avec un stylet actif et un hub USB-C pour une expérience complète.</p>
+      <div class="recommendation">
+        <h3>Recommandations :</h3>
+        <p>Créateurs de contenu, étudiants haut niveau, professionnels mobiles, amateurs de design premium.</p>
+        <a href="https://amzn.to/4la5N2M">💻 Dell XPS 13 Plus – Écran 3.5K OLED, Core i7</a><br>
+        <a href="https://amzn.to/4f5VPh8">💻 Lenovo Yoga 9i – i7, OLED tactile, stylet inclus</a><br>
+        <p class="prix"><a href="https://amzn.to/4o7Obaf" class="btn" target="_blank" rel="noopener noreferrer">Voir l'offre</a></p>
+      </div>
+    </div>
+    <div class="product-container">
+  <span class="badge">🔥 Exlusivité</span>
+      <div class="images">
+        <img src="image/acer go 14.jpg" alt="Asus ROG Avant">
+        
+      </div>
+      <h2>💻 Acer Aspire Go 14 AG14-31P-3142 – Compacité et Performance au Quotidien</h2>
+      <p><strong>RAM :</strong>  8 Go</p>
+      <p><strong>Stockage :</strong>512 Go SSD</p>
+      <p><strong>Carte Graphique :</strong> Intel UHD Graphics</p>
+       <p><strong>Processeur : </strong> Intel Core i3-N305 </p>
+       <p><strong>Système :  </strong> Windows 11 Home </p>
+       <p><strong> Clavier :  </strong> AZERTY (Français)</p>
+      
+      <h3>Description :</h3>
+      <p>Le Acer Aspire Go 14 AG14-31P-3142 est un ordinateur portable fin et léger de 14 pouces, pensé pour les utilisateurs à la recherche de fluidité, confort visuel et autonomie. Son écran WUXGA IPS au format 16:10 améliore l’affichage pour le travail, les cours ou la navigation.
+
+Doté d’un processeur Intel Core i3-N305, de 8 Go de RAM et d’un SSD de 512 Go, il offre des performances rapides et stables au quotidien. Parfait pour la bureautique, les visioconférences, le streaming et la navigation web.</p>
+      <div class="recommendation">
+        <h3>Recommandations :</h3>
+        <p>Étudiants, professionnels nomades, utilisateurs polyvalents à la recherche d’un bon rapport qualité/prix.</p>
+        <a href="https://amzn.to/44R6r07">💻HP 17 – 16 Go de RAM・SSD 512 Go</a><br>
+        <a href="https://amzn.to/474eQ1v">💻 Lenovo IdeaPad Slim 3 – RAM 16Go, SSD 512Go</a><br>
+        <p class="prix"><a href="https://amzn.to/4kYnvWA" class="btn" target="_blank" rel="noopener noreferrer">Voir l'offre</a></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Témoignages -->
+  <section class="temoignages-slider">
+    <h2>Ce que disent nos premiers visiteurs</h2>
+    <div class="slider">
+      <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+      <div class="slide active">
+        <p class="etoiles">⭐️⭐️⭐️⭐️⭐️</p>
+        <p><strong>Fatou K. (Abidjan)</strong> : “Le site est clair, les produits sont bien présentés. J’ai découvert plein d’idées d’achat !”</p>
+      </div>
+      <div class="slide">
+        <p class="etoiles">⭐️⭐️⭐️⭐️☆</p>
+        <p><strong>Jean M. (Bouaké)</strong> : “J’ai recommandé ce site à mes amis, il regroupe tout ce qu’on aime : tech, beauté, entrepreneuriat.”</p>
+      </div>
+      <div class="slide">
+        <p class="etoiles">⭐️⭐️⭐️⭐️⭐️</p>
+        <p><strong>Alima D. (Yamoussoukro)</strong> : “Super plateforme pour repérer les tendances avant tout le monde. Bravo Affiliapro !”</p>
+      </div>
+      <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>@ 2025 Affiliapro - Tous droits réservés. 
+        <a href="mentions-legales.html">Mentions légales</a> | 
+        <a href="a-propos.html">À propos</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/2250700000000?text=Bonjour%20AffiliaPro%2C%20je%20souhaite%20en%20savoir%20plus%20!" class="whatsapp" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+  </a>
+
+  <script src="main.js"></script>
+</body>
+</html>

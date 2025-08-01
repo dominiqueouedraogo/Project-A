@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Découvrez les meilleurs produits tendance en Tech, Gaming, Beauté et Business. AffiliaPro vous guide vers les meilleures offres Amazon et bien plus.">
+  <meta name="keywords" content="produits tech, gaming, beauté, affiliation Amazon, entrepreneuriat, gadgets tendance, bons plans, AffiliaPro">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="AffiliaPro - Produits Tech, Beauté & Business à Prix Malins">
+  <meta property="og:description" content="Explorez une sélection de produits tendance et profitez des meilleures offres du moment avec AffiliaPro.">
+  <meta property="og:image" content="https://www.tonsite.com/images/og-image.jpg">
+  <meta property="og:url" content="https://www.tonsite.com">
+  <meta property="og:type" content="website">
+  <title>PC | AffiliaPro</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Header -->
+ <header class="header">
+  <div class="logo-container">
+   <img src="image/logo.png" alt="Affiliapro" class="full-logo" loading="lazy">
+  </div>
+  <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+   <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="pc1.html">PC</a></li>
+        <li><a href="electro.html">Électro</a></li>
+        <li><a href="telephone.html">Téléphone</a></li>
+        <li><a href="top-du-moment.html">Tendances</a></li>
+
+      </ul>
+    </nav>
+
+  <div class="search-bar">
+    <form id="searchForm">
+      <input type="text" id="searchInput" placeholder="Rechercher un produit..." required />
+      <button type="submit">Rechercher</button>
+    </form>
+  </div>
+</header>
+
+<style>
+  /* Conteneur global */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background:hsl(0, 100%, 100%);
+    flex-wrap: wrap; /* permet le retour à la ligne sur mobile */
+  }
+
+  /* Logo */
+  .logo-container {
+    flex: 0 0 auto;
+    max-width: 150px;
+  }
+  .logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Barre de recherche */
+  .search-bar {
+    flex: 1 1 300px; /* s’étire, min 300px */
+    margin-left: 20px;
+    background-color: #070303;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 500px;
+  }
+
+  .search-bar form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .search-bar input[type="text"] {
+    padding: 10px;
+    flex-grow: 1;
+    min-width: 150px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+
+  .search-bar button {
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .search-bar button:hover {
+    background-color: darkorange;
+  }
+
+  /* Responsive : sur petits écrans, empiler verticalement */
+  @media (max-width: 600px) {
+    .site-header {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .search-bar {
+      margin-left: 0;
+      width: 100%;
+      max-width: 100%;
+    }
+    .search-bar form {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .search-bar input[type="text"],
+    .search-bar button {
+      width: 100%;
+    }
+  }
+</style>
+
+<script>
+  document.getElementById('searchForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const keyword = document.getElementById('searchInput').value.trim();
+    if (keyword) {
+      const encodedKeyword = encodeURIComponent(keyword);
+      const trackingId = 'dominiqueodg1-21'; // Remplace par ton vrai tag affilié Amazon
+      const amazonUrl = `https://www.amazon.fr/s?k=${encodedKeyword}&tag=${trackingId}`;
+     window.open(amazonUrl, '_blank');
+
+    }
+  });
+</script>
+  <div class="overlay" onclick="toggleMenu()"></div>
+
+  <!-- Produits côte à côte -->
+  <main class="product-section produits-ligne">
+    <div class="product-container">
+       <span class="badge">🔥 Meilleure vente</span>
+      <div class="images">
+        <img src="image/pixel 8pro.jpg" alt="Asus ROG Avant">
+        
+      </div>
+      <h2>📱 Google Pixel 8 Pro – Puissance, Photo et Intelligence à l’état Pur</h2>
+      
+      <p><strong>Stockage :</strong>  512 Go</p>
+      <p><strong>Autonomie : </strong> Jusqu’à 24 heures</p>
+      <p><strong>Appareil photo : </strong> Téléobjectif + technologie Google AI</p>
+      <p><strong> Écran : </strong> Super Actua – Haute luminosité, ultra fluide</p>
+      <p><strong> Couleur : </strong> Noir Volcanique</p>
+       <p><strong> Système :</strong> Android – Débloqué tout opérateur</p>
+      
+      <h3>Description :</h3>
+      <p>Le Google Pixel 8 Pro est le smartphone Android haut de gamme de référence pour les passionnés de technologie, de photo et d’intelligence artificielle. Son écran Super Actua offre une qualité visuelle exceptionnelle, même en plein soleil, tandis que le téléobjectif et la caméra intelligente permettent de capturer des photos et vidéos époustouflantes.
+
+Avec 512 Go de stockage, une autonomie allant jusqu’à 24 heures et toutes les dernières fonctionnalités de Google AI, le Pixel 8 Pro est taillé pour l’excellence mobile.</p>
+      <div class="recommendation">
+        <h3>Recommandations :</h3>
+        <p>Utilisateurs exigeants, photographes mobiles, professionnels, fans de Google Pixel.</p>
+        <a href="https://amzn.to/40zZrSL">📱 Samsung Galaxy S24 Ultra – Écran AMOLED, S-Pen, caméra 200 MP</a><br>
+        <a href="https://amzn.to/40CNiMO"> 📱Samsung Galaxy Z Fold7</a><br>
+         <p class="prix"><a href="https://amzn.to/44QwkgA" class="btn" target="_blank" rel="noopener noreferrer">Voir l'offre</a></p>
+      </div>
+    </div>
+
+    <div class="product-container">
+       <span class="badge">🔥 Meilleure vente</span>
+      <div class="images">
+        <img src="image/galaxiZ.jpg" alt="Asus ROG Avant">
+       
+      </div>
+      <h2>📱 Samsung Galaxy Z Fold7 – L’Innovation Pliable avec Galaxy AI</h2>
+      <p><strong>Technologie : </strong>Écran pliable + Galaxy AI</p>
+      <p><strong>Stockage :</strong> 512 Go </p>
+      <p><strong>Connectivité :</strong>  5G</p>
+      <p><strong>Accessoires : </strong> Chargeur secteur rapide 25W inclus</p>
+      <p><strong>Couleur : </strong> Bleu Nuit</p>
+      <p><strong>Système :</strong> Android – Déverrouillé (Version FR) </p>
+
+      <h3>Description :</h3>
+      <p>Le Samsung Galaxy Z Fold7 est un smartphone pliable de nouvelle génération, combinant la puissance du multitâche, la fluidité d’un grand écran et l’intelligence de Galaxy AI. Grâce à sa connectivité 5G, ses 512 Go de stockage, et son design unique pliable, il se transforme facilement en tablette pour une productivité et une immersion totale.
+
+Avec le chargeur rapide 25W inclus, profitez d’une recharge efficace pour une autonomie toujours disponible. Un smartphone conçu pour repousser les limites du possible.</p>
+      <div class="recommendation">
+        <h3>Recommandations :</h3>
+        <p>Professionnels, multitâche intensif, fans de technologie et d’innovation mobile. </p>
+        <a href="https://amzn.to/4kW1qYZss">📱 Google Pixel 9  – Appareil Photo avancé,128GB </a><br>
+        <a href="https://amzn.to/45v6HB9">📱HUAWEI Mate X6 - 12 Go + 512 Go</a> <br>
+         <p class="prix"><a href="https://amzn.to/46pMUFb" class="btn" target="_blank" rel="noopener noreferrer">Voir l'offre</a></p>
+      </div>
+    </div>
+    <div class="product-container">
+       <span class="badge">🔥 Meilleure vente</span>
+      <div class="images">
+        <img src="image/z flip.jpg" alt="Asus ROG Avant">
+       
+      </div>
+      <h2>📱 Samsung Galaxy Z Flip7 – Élégance Pliable et Intelligence Galaxy AI</h2>
+      <p><strong>Technologie : </strong> Écran pliable + Galaxy AI</p>
+      <p><strong>Stockage :</strong>256 Go </p>
+      <p><strong>Connectivité :</strong>  5G</p>
+      <p><strong>Accessoires : </strong> Chargeur rapide 25W inclus</p>
+      <p><strong>Couleur : </strong>  Noir Absolu</p>
+      <p><strong>Système :</strong>  Android – Déverrouillé (Version FR) </p>
+
+      <h3>Description :</h3>
+      <p>Le Samsung Galaxy Z Flip7 associe le style compact d’un smartphone pliable à la puissance de Galaxy AI pour une expérience fluide et personnalisée. Compact une fois replié, il s’ouvre sur un grand écran immersif, parfait pour la navigation, les selfies mains libres ou les appels vidéo.
+
+Avec 256 Go de stockage, la 5G ultra-rapide et une batterie optimisée avec recharge 25W, ce modèle vous accompagne dans tous vos usages du quotidien avec élégance et efficacité.</p>
+      <div class="recommendation">
+        <h3>Recommandations :</h3>
+        <p>Utilisateurs modernes, fans de design, créateurs de contenu mobile. </p>
+        <a href="https://amzn.to/479JDdo">📱 Samsung Galaxy Z Fold7 – Format tablette, ultra-productif </a><br>
+        <a href="https://amzn.to/46G2hJT">📱 Motorola Razr 40 Ultra – Pliable premium, écran externe plus grand</a> <br>
+         <p class="prix"><a href="https://amzn.to/46AcgQT" class="btn" target="_blank" rel="noopener noreferrer">Voir l'offre</a></p>
+      </div>
+    </div>
+     <div class="product-container">
+       <span class="badge">🔥 Meilleure vente</span>
+      <div class="images">
+        <img src="image/A26.jpg" alt="Asus ROG Avant">
+       
+      </div>
+      <h2>📱 Samsung Galaxy A26 5G – Performance Accessible et Connectivité Rapide</h2>
+      
+      <p><strong>Stockage :</strong> 128 Go </p>
+      <p><strong>Connectivité :</strong>  5G</p>
+      <p><strong>Autonomie : </strong>  Recharge rapide 25W</p>
+      <p><strong>Couleur : </strong>  Vert d'eau</p>
+      <p><strong>Système :</strong>  Android – Smartphone déverrouillé (Version FR)</p>
+
+      <h3>Description :</h3>
+      <p>Le Samsung Galaxy A26 5G allie puissance et accessibilité. Grâce à la connectivité 5G, naviguez, streamez et téléchargez vos contenus à une vitesse fulgurante. Son stockage de 128 Go vous permet de conserver photos, vidéos et applications sans compromis.
+
+Avec son design élégant vert d'eau, une autonomie optimisée et la recharge rapide 25W, ce smartphone est parfait pour les utilisateurs du quotidien qui veulent la performance sans se ruiner.</p>
+      <div class="recommendation">
+        <h3>Recommandations :</h3>
+        <p>Étudiants, professionnels, utilisateurs à la recherche d’un excellent rapport qualité/prix. </p>
+        <a href="https://amzn.to/4laNKJN">📱 Samsung Galaxy A16 128 Go – Encore plus économique </a><br>
+        <a href="https://amzn.to/4onB3hx">📱 Xiaomi Smartphone Redmi Note 14,6+128GB – Bonnes performances photo & design moderne</a> <br>
+         <p class="prix"><a href="https://amzn.to/4lVNnUv" class="btn" target="_blank" rel="noopener noreferrer">Voir l'offre</a></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Témoignages -->
+  <section class="temoignages-slider">
+    <h2>Ce que disent nos premiers visiteurs</h2>
+    <div class="slider">
+      <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+      <div class="slide active">
+        <p class="etoiles">⭐️⭐️⭐️⭐️⭐️</p>
+        <p><strong>Fatou K. (Abidjan)</strong> : “Le site est clair, les produits sont bien présentés. J’ai découvert plein d’idées d’achat !”</p>
+      </div>
+      <div class="slide">
+        <p class="etoiles">⭐️⭐️⭐️⭐️☆</p>
+        <p><strong>Jean M. (Bouaké)</strong> : “J’ai recommandé ce site à mes amis, il regroupe tout ce qu’on aime : tech, beauté, entrepreneuriat.”</p>
+      </div>
+      <div class="slide">
+        <p class="etoiles">⭐️⭐️⭐️⭐️⭐️</p>
+        <p><strong>Alima D. (Yamoussoukro)</strong> : “Super plateforme pour repérer les tendances avant tout le monde. Bravo Affiliapro !”</p>
+      </div>
+      <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>@ 2025 Affiliapro - Tous droits réservés. 
+        <a href="mentions-legales.html">Mentions légales</a> | 
+        <a href="a-propos.html">À propos</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/2250700000000?text=Bonjour%20AffiliaPro%2C%20je%20souhaite%20en%20savoir%20plus%20!" class="whatsapp" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+  </a>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Découvrez les meilleurs produits tendance en Tech, Gaming, Beauté et Business. AffiliaPro vous guide vers les meilleures offres Amazon et bien plus.">
+  <meta name="keywords" content="produits tech, gaming, beauté, affiliation Amazon, entrepreneuriat, gadgets tendance, bons plans, AffiliaPro">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="AffiliaPro - Produits Tech, Beauté & Business à Prix Malins">
+  <meta property="og:description" content="Explorez une sélection de produits tendance et profitez des meilleures offres du moment avec AffiliaPro.">
+  <meta property="og:image" content="https://www.tonsite.com/images/og-image.jpg">
+  <meta property="og:url" content="https://www.tonsite.com">
+  <meta property="og:type" content="website">
+  <title>AffiliaPro - Accueil</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <meta name="google-site-verification" content="BNbr-U7sU6eNvO75L_tU_X0EwWv4aXCVw6sR1rXMdm4" />
+</head>
+<body>
+
+<!-- ... (tout le head reste inchangé) -->
+
+<body>
+
+<!-- ...existing code... -->
+
+<header class="header">
+  <div class="logo-container">
+   <img src="image/logo.png" alt="Affiliapro" class="full-logo" loading="lazy">
+  </div>
+  <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+   <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="pc1.html">PC</a></li>
+        <li><a href="electro.html">Électro</a></li>
+        <li><a href="telephone.html">Téléphone</a></li>
+        <li><a href="top-du-moment.html">Tendances</a></li>
+
+      </ul>
+    </nav>
+
+  <div class="search-bar">
+    <form id="searchForm">
+      <input type="text" id="searchInput" placeholder="Rechercher un produit..." required />
+      <button type="submit">Rechercher</button>
+    </form>
+  </div>
+</header>
+
+<style>
+  /* Conteneur global */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background:hsl(0, 100%, 100%);
+    flex-wrap: wrap; /* permet le retour à la ligne sur mobile */
+  }
+
+  /* Logo */
+  .logo-container {
+    flex: 0 0 auto;
+    max-width: 150px;
+  }
+  .logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Barre de recherche */
+  .search-bar {
+    flex: 1 1 300px; /* s’étire, min 300px */
+    margin-left: 20px;
+    background-color: #070303;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 500px;
+  }
+
+  .search-bar form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .search-bar input[type="text"] {
+    padding: 10px;
+    flex-grow: 1;
+    min-width: 150px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+
+  .search-bar button {
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .search-bar button:hover {
+    background-color: darkorange;
+  }
+
+  /* Responsive : sur petits écrans, empiler verticalement */
+  @media (max-width: 600px) {
+    .site-header {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .search-bar {
+      margin-left: 0;
+      width: 100%;
+      max-width: 100%;
+    }
+    .search-bar form {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .search-bar input[type="text"],
+    .search-bar button {
+      width: 100%;
+    }
+  }
+</style>
+
+<script>
+  document.getElementById('searchForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const keyword = document.getElementById('searchInput').value.trim();
+    if (keyword) {
+      const encodedKeyword = encodeURIComponent(keyword);
+      const trackingId = 'dominiqueodg1-21'; // Remplace par ton vrai tag affilié Amazon
+      const amazonUrl = `https://www.amazon.fr/s?k=${encodedKeyword}&tag=${trackingId}`;
+     window.open(amazonUrl, '_blank');
+
+    }
+  });
+</script>
+
+<div class="overlay" onclick="toggleMenu()"></div>
+<!-- ...existing code... -->
+
+    <section class="hero">
+  <div class="container">
+    <section class="accueil tendances">
+  <div class="container">
+    <h2>
+      <span class="highlight">Découvrez les produits</span><br>
+      <span class="highlight2">les plus tendances du moment !</span>
+    </h2>
+    <p style="font-size: 1.2rem; margin-top: 15px;">
+      Une sélection exclusive mise à jour régulièrement : Tech, Maison, Lifestyle.
+    </p>
+    <a href="#tendances-tech" class="btn" style="margin-top: 25px;">Explorer maintenant</a>
+  </div>
+</section>
+s
+   <p class="accueil tendances-intro" style="color:black;">📈 Les meilleures tendances du moment vous attendent !</p>
+
+    <section class="guide tendances-guide">
+  <div class="container">
+    <h3>Pourquoi ces produits sont-ils incontournables ?</h3>
+    <p class="texte-guide tendances-texte">
+      Chaque article présenté ici est le résultat d'une analyse des meilleures ventes, des avis clients et des tendances actuelles du marché. Que vous soyez passionné de tech, de gaming ou de lifestyle, vous trouverez ici ce qui fait vibrer les internautes en ce moment.
+    </p>
+  </div>
+</section>
+
+  </div>
+</section>
+
+  </div>
+</section>
+
+<!-- 🆕 Nouvelle section Nos Catégories -->
+<section class="nos-categories">
+  <div class="container">
+    <h2>Nos Catégories</h2>
+    <p>Parcourez nos catégories principales et trouvez les meilleures recommandations selon vos besoins :</p>
+  </div>
+</section>
+
+<!-- 🛍️ Catégories en haut -->
+<div class="categories">
+  <div class="categorie"><a href="pc1.html">PC</a></div>
+  <div class="categorie"><a href="tech-innovant.html">Tech Innovante</a> </div>
+  <div class="categorie"><a href="maison.html"> Maison & Bien-être</a></div>
+  <div class="categorie"><a href="mobilite.html"> Mobilité & Lifestyle</a></div>
+</div>
+
+<!-- Sections produits PC et Téléphone inchangées -->
+<!-- ... (tout le reste de ton code jusqu’au footer reste inchangé) -->
+
+
+<div class="section" id="tendances-tech">
+  <h2>🔬 Tech Innovante</h2>
+  <div class="produits">
+    <!-- Produit tendance Tech -->
+    
+     <div class="produit">
+      <span class="badge">⭐ Meilleure innovation</span>
+      <a href="https://amzn.to/4fndZvi" target="_blank">
+        <img src="image/quantique.jpg" alt="Tablette AI">
+      </a>
+      <p style="text-align: center;">Tout savoir sur l’informatique quantique | Guide complet vers la technologie du futur</p>
+<p style="font-size: 15px; line-height: 1.6;">
+  📘 <strong>Contenu :</strong> Clair, progressif et illustré pour comprendre les bases de l’informatique quantique.<br>
+  🧪 <strong>Concepts clés :</strong> Qubits, superposition, intrication, algorithmes quantiques...<br>
+  ⚙️ <strong>Applications futures :</strong> Cybersécurité, intelligence artificielle, médecine, finance, etc.<br>
+  ⏳ <strong>Perspective :</strong> Mise en perspective historique et prospective : d’hier à demain.<br>
+  🌍 <strong>Public :</strong> Adapté aux débutants comme aux technophiles.<br>
+  🖥️ <strong>Enjeux actuels :</strong> Compréhension des enjeux pour Google, IBM, D-Wave, etc.<br>
+  📥 <strong>Format :</strong> Numérique téléchargeable ou imprimable selon version.<br>
+  🎓 <strong>Idéal pour :</strong> Étudiants, enseignants, chercheurs, développeurs, curieux.<br>
+  🌐 <strong>Applications concrètes :</strong> Cryptographie, optimisation, IA, simulation de systèmes complexes.<br>
+</p>
+
+      <p class="prix"><a href="https://amzn.to/4fndZvi" target="_blank" class="btn">Voir l'offre</a></p>
+    </div>
+     <div class="produit">
+      <span class="badge">⭐ Meilleure innovation</span>
+      <a href="https://amzn.to/tech-ai" target="_blank">
+        <img src="image/oura.jpg" alt="Tablette AI">
+      </a>
+      <p style="text-align: center;">Oura Ring Gen3 Heritage – Anneau connecté Silver | Suivi sommeil, activité & santé – 7 jours d’autonomie</p>
+<p style="font-size: 15px; line-height: 1.6;">
+  💡 <strong>Design :</strong> Discret et élégant : format bague, finition Silver, taille 7.<br>
+  💤 <strong>Suivi sommeil :</strong> Phases du sommeil, régularité, score de repos.<br>
+  ❤️ <strong>Surveillance cardiaque :</strong> Continue jour & nuit.<br>
+  🔥 <strong>Température corporelle :</strong> Mesure pour détecter les changements subtils.<br>
+  🏃 <strong>Analyse activité :</strong> Nombre de pas, niveau d’effort, récupération.<br>
+  📱 <strong>Application :</strong> Mobile intuitive, compatible iOS & Android.<br>
+  🔋 <strong>Autonomie :</strong> Jusqu’à 7 jours avec recharge rapide.<br>
+  📦 <strong>Inclus :</strong> Baguier Oura pour garantir la bonne taille avant achat.<br>
+</p>
+
+      <p class="prix"><a href="https://amzn.to/tech-ai" target="_blank" class="btn">Voir l'offre</a></p>
+    </div>
+    <!-- Autres produits tech... -->
+  </div>
+</div>
+
+<div class="section" id="tendances-maison">
+  <h2>🏡 Maison & Bien-être</h2>
+  <div class="produits">
+    <!-- Produit bien-être -->
+    <div class="produit">
+      <span class="badge">🔥 Top Santé</span>
+      <a href="https://amzn.to/3HdiWKg" target="_blank">
+        <img src="image/pistolet.jpg" alt="Extracteur de jus">
+      </a>
+      <p style="text-align: center;">Pistolet de Massage RENPHO – Tête chaude & froide | 5 têtes, ultra silencieux, recharge USB-C</p>
+<p style="font-size: 15px; line-height: 1.6;">
+  🔥❄️ <strong>Tête de massage :</strong> Chaude & froide, soulage douleurs et réactive circulation.<br>
+  🧩 <strong>Accessoires :</strong> 5 têtes interchangeables pour chaque zone du corps (nuque, dos, jambes, etc.).<br>
+  🤫 <strong>Technologie :</strong> Ultra silencieuse, massage puissant sans bruit gênant.<br>
+  🔋 <strong>Batterie :</strong> Rechargeable USB Type-C, autonomie longue durée, pratique en voyage.<br>
+  👐 <strong>Ergonomie :</strong> Poignée facile à prendre en main, sans fatigue.<br>
+  💼 <strong>Utilisation :</strong> Idéal sportifs, kinés, travailleurs de bureau, personnes stressées.<br>
+</p>
+
+      <p class="prix"><a href="https://amzn.to/3HdiWKg" target="_blank" class="btn">Voir l'offre</a></p>
+    </div>
+     <div class="produit">
+      <span class="badge">🔥 Top Santé</span>
+      <a href="https://amzn.to/41gQtKf" target="_blank">
+        <img src="image/wessper.jpg" alt="Extracteur de jus">
+      </a>
+      <p style="text-align: center;">Wessper – Bouteille d’eau de Motivation 1L en Verre | Couvercle bambou, sans BPA, avec housse silicone</p>
+<p style="font-size: 15px; line-height: 1.6;">
+  ⏰ <strong>Motivation :</strong> Marqueurs horaires pour suivre vos objectifs d’hydratation heure par heure.<br>
+  🧪 <strong>Qualité du verre :</strong> Borosilicate durable, résistant à la chaleur, sans arrière-goût.<br>
+  🍃 <strong>Couvercle :</strong> Naturel en bambou, hermétique et écologique.<br>
+  🚫 <strong>Sans BPA :</strong> Aucun plastique nocif au contact de l’eau.<br>
+  🧤 <strong>Protection :</strong> Housse en silicone blanche antichoc, prise en main confortable.<br>
+  🧼 <strong>Entretien :</strong> Facile à nettoyer, compatible zéro déchet.<br>
+</p>
+
+      <p class="prix"><a href="https://amzn.to/41gQtKf" target="_blank" class="btn">Voir l'offre</a></p>
+    </div>
+     
+    <!-- Autres produits maison... -->
+  </div>
+</div>
+
+<div class="section" id="tendances-lifestyle">
+  <h2>🚀 Mobilité & Lifestyle</h2>
+  <div class="produits">
+    <!-- Produit mobile -->
+    <div class="produit">
+      <span class="badge">🔥 choix d'Amazone</span>
+      <a href="https://amzn.to/3JaWiTk" target="_blank">
+        <img src="image/trotinette.jpg" alt="Galaxy Z Flip7">
+      </a>
+     <p style="text-align: center;">Cecotec Trottinette Électrique Adulte Approuvée Bongo Série Y65 | Moteur 1200 W, Autonomie 65 km, Double Suspension</p>
+<p style="font-size: 15px; line-height: 1.6;">
+  ⚡ <strong>Moteur :</strong> Puissance maximale de 1200 W (500 W nominal) pour une conduite dynamique.<br>
+  🔋 <strong>Autonomie :</strong> Jusqu’à 65 km sur une seule charge, idéale pour les trajets urbains.<br>
+  🚀 <strong>Entraînement :</strong> Moteur à l’arrière pour une meilleure stabilité et traction.<br>
+  🛞 <strong>Roues :</strong> Pneus de 10 pouces tout-terrain pour plus de confort et d’adhérence.<br>
+  🛠️ <strong>Suspension :</strong> Double suspension avant/arrière pour absorber les chocs.<br>
+  🛑 <strong>Sécurité :</strong> Système de freinage e-ABS pour un contrôle optimal.<br>
+  👤 <strong>Utilisation :</strong> Conçue pour les adultes, conforme aux normes européennes.<br>
+</p>
+
+      <p class="prix"><a href="https://amzn.to/3JaWiTk" target="_blank" class="btn">Voir l'offre</a></p>
+    </div>
+     <div class="produit">
+      <span class="badge">🔥 choix d'Amazone</span>
+      <a href="https://amzn.to/4mlOkFg" target="_blank">
+        <img src="image/sam.jpg" alt="Galaxy Z Flip7">
+      </a>
+     <p style="text-align: center;">Samsonite Airea – Spinner L Extensible | Valise 78 cm, 111,5 / 120 L, Couleur Noir</p>
+<p style="font-size: 15px; line-height: 1.6;">
+  🧳 <strong>Capacité :</strong> 111,5 L extensible jusqu’à 120 L – idéale pour les longs séjours.<br>
+  📏 <strong>Dimensions :</strong> 78 cm – format spacieux et conforme aux standards internationaux.<br>
+  ⚖️ <strong>Légèreté :</strong> Conçue en matériaux ultralégers pour un transport sans effort.<br>
+  🔄 <strong>Mobilité :</strong> 4 roues doubles pivotantes pour une maniabilité optimale à 360°.<br>
+  🔐 <strong>Sécurité :</strong> Fermeture à combinaison TSA intégrée pour des voyages sans souci.<br>
+  🖤 <strong>Design :</strong> Élégant et sobre en noir – adapté aux voyages pro et perso.<br>
+  ✈️ <strong>Usage :</strong> Parfaite pour les voyageurs fréquents, en avion ou en train.<br>
+</p>
+
+      <p class="prix"><a href="https://amzn.to/4mlOkFg" target="_blank" class="btn">Voir l'offre</a></p>
+    </div>
+     
+    <!-- Autres produits lifestyle... -->
+  </div>
+</div>
+
+
+<!-- SECTION SLIDER FLÈCHES TÉMOIGNAGES -->
+<section class="temoignages-slider">
+  <h2>Ce que disent nos premiers visiteurs</h2>
+
+  <div class="slider">
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+
+    <div class="slide active">
+      <p class="etoiles">⭐️⭐️⭐️⭐️⭐️</p>
+      <p><strong>Fatou K. (Abidjan)</strong> : “Le site est clair, les produits sont bien présentés. J’ai découvert plein d’idées d’achat !”</p>
+    </div>
+
+    <div class="slide">
+      <p class="etoiles">⭐️⭐️⭐️⭐️☆</p>
+      <p><strong>Jean M. (Bouaké)</strong> : “J’ai recommandé ce site à mes amis, il regroupe tout ce qu’on aime : tech, beauté, entrepreneuriat.”</p>
+    </div>
+
+    <div class="slide">
+      <p class="etoiles">⭐️⭐️⭐️⭐️⭐️</p>
+      <p><strong>Alima D. (Yamoussoukro)</strong> : “Super plateforme pour repérer les tendances avant tout le monde. Bravo Affiliapro !”</p>
+    </div>
+
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+  </div>
+</section>
+<footer>
+    <div class="container">
+    <p>@ 2025 Affiliapro - Tous droits réservés. <a href="mentions-legales.html">Mentions légales</a> | <a href="a-propos.html">À propos</a></p>
+
+    </div>
+  </footer>
+   <!-- WhatsApp Button -->
+  <a href="https://wa.me/2250700000000?text=Bonjour%20AffiliaPro%2C%20je%20souhaite%20en%20savoir%20plus%20!" class="whatsapp" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+  </a>
+<script src="main.js"></script>
+</body>
+</html>
