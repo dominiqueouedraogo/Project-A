@@ -42,7 +42,7 @@
          <li><a href="tech-innovant.html">Tech Innovante</a></li>
           <li><a href="maison.html">Maison & Bien-être</a></li>
            <li><a href="mobilite.html">Mobilité & Lifestyle</a></li>
-        <li><a href="top-du-moment.html">Tendances</a></li>
+       
 
       </ul>
     </nav>
@@ -131,6 +131,7 @@
     width: 100%;
     max-width: 90%; /* Limite la largeur max à 90% de l'écran */
     box-sizing: border-box; /* pour que padding ne casse pas la largeur */
+     border-radius: 15px;
   }
     .search-bar form {
       flex-direction: column;
@@ -160,20 +161,23 @@
 <div class="overlay" onclick="toggleMenu()"></div>
 <!-- ...existing code... -->
 
-    <section class="hero" id= "tendances">
-  <div class="container">
+   <section class="hero" id="tendances">
+  <div class="container container-tendances">
     <section class="accueil tendances">
-  <div class="container">
-    <h2 class="titre-tendances">
-      <span class="highlight">Découvrez les produits</span><br>
-      <span class="highlight2">les plus tendances du moment !</span>
-    </h2>
-    <p style="font-size: 1.2rem; margin-top: 15px;">
-      Une sélection exclusive mise à jour régulièrement : Tech, Maison, Lifestyle.
-    </p>
-    <a href="#tendances-tech" class="btn" style="margin-top: 25px;">Explorer maintenant</a>
+      <div class="container">
+        <h2 class="titre-tendances">
+          <span class="highlight">Découvrez les produits</span><br>
+          <span class="highlight2">les plus tendances du moment !</span>
+        </h2>
+        <p style="font-size: 1.2rem; margin-top: 15px;">
+          Une sélection exclusive mise à jour régulièrement : Tech, Maison, Lifestyle.
+        </p>
+        <a href="#tendances-tech" class="btn" style="margin-top: 25px;">Explorer maintenant</a>
+      </div>
+    </section>
   </div>
 </section>
+
 
    <p class="accueil tendances-intro" style="color:black;">📈 Les meilleures tendances du moment vous attendent !</p>
 

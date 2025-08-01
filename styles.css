@@ -1425,7 +1425,7 @@ font: size 20px;
   }
   .hero h2{
    
-    margin-top: -50px; 
+    margin-top: -95px; 
   }
 
   .hero p {
@@ -1434,7 +1434,7 @@ font: size 20px;
     
   }
   #pc, #telephone,#electro,#tendances{
-     margin-top: -150px;
+     margin-top: -160px;
   }
 
  .section {
@@ -1550,7 +1550,7 @@ font: size 20px;
     margin:-70px;
     border-radius: 12px;
     box-shadow: 0 0 10px #ff9900;
-    margin-top: 120px;
+    margin-top: 90px;
     background: #1a1a1a;
     
    
@@ -1615,14 +1615,10 @@ font: size 20px;
     h2.titre-temoignages {
     margin-top: -80px;
   }
-   
-  
-
-  
- 
- 
-
-  .tendances-guide h3 {
+  .container-tendances {
+    margin-top: -80px; /* valeur à ajuster selon ton besoin */
+  }
+   .tendances-guide h3 {
     font-size: 1.8rem;
   }
 
