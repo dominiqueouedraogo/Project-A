@@ -1635,7 +1635,9 @@ font: size 20px;
    
      padding: 16px 10px;
   }
-
+.accueil tendances-intro {
+  padding-top:-80px;
+}
   #nav-menu ul li a {
     color: #fff;
     font-size: 16px;
