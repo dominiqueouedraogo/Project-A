@@ -3491,6 +3491,10 @@ font: size 20px;
   }
   .produit {
    background-color: #2b0000 !important;
-   
-}
+     }
+     #tendances-tech,
+  #tendances-maison,
+  #tendances-lifestyle {
+    margin-top: -200px;
+  }
 }
