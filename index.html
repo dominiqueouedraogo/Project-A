@@ -18,129 +18,137 @@
   <meta name="google-site-verification" content="BNbr-U7sU6eNvO75L_tU_X0EwWv4aXCVw6sR1rXMdm4" />
 </head>
 
-
-<!-- ... (tout le head reste inchangé) -->
-
 <body>
-
-<!-- ...existing code... -->
 
 <header class="header">
   <div class="logo-container">
    <img src="image/logo.png" alt="Affiliapro" class="full-logo" loading="lazy">
   </div>
+
   <div class="menu-toggle">
       <span></span>
       <span></span>
       <span></span>
-    </div>
-   <nav id="nav-menu">
+  </div>
+
+  <nav id="nav-menu">
       <ul>
         <li><a href="index.html">Accueil</a></li>
         <li><a href="pc1.html">PC</a></li>
         <li><a href="electro.html">Électro</a></li>
         <li><a href="telephone.html">Téléphone</a></li>
         <li><a href="top-du-moment.html">Tendances</a></li>
-
       </ul>
-    </nav>
+  </nav>
 
+  <!-- Barre de recherche -->
   <div class="search-bar">
     <form id="searchForm">
       <input type="text" id="searchInput" placeholder="Rechercher un produit..." required />
-      <button type="submit">Rechercher</button>
+      <button type="submit" class="search-btn">
+        <i class="fas fa-search"></i>
+      </button>
     </form>
   </div>
 </header>
 
+<!-- Font Awesome pour l'icône -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
-  /* Conteneur global */
+  
+/* Conteneur global */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background:hsl(0, 100%, 100%);
+  flex-wrap: wrap; /* retour ligne sur mobile */
+}
+
+/* Logo réduit */
+.logo-container {
+  flex: 0 0 auto;
+  max-width: 100px; /* réduit la taille */
+}
+.logo {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Barre de recherche */
+.search-bar {
+  flex: 1 1 300px;
+  margin-left: 20px;
+  background-color: #070303;
+  padding: 8px 12px;
+  border-radius: 25px;
+  max-width: 400px;
+}
+
+.search-bar form {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
+  padding: 8px 12px;
+  flex-grow: 1;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-bar .search-btn {
+  background: orange;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.search-bar .search-btn i {
+  color: white;
+  font-size: 16px;
+}
+
+/* Hover */
+.search-bar .search-btn:hover {
+  background: darkorange;
+}
+
+/* Responsive */
+@media (max-width: 540px) {
   .header {
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background:hsl(0, 100%, 100%);
-    flex-wrap: wrap; /* permet le retour à la ligne sur mobile */
-  }
-
-  /* Logo */
-  .logo-container {
-    flex: 0 0 auto;
-    max-width: 150px;
-  }
-  .logo {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  /* Barre de recherche */
-  .search-bar {
-    flex: 1 1 300px; /* s’étire, min 300px */
-    margin-left: 20px;
-    background-color: #070303;
-    padding: 20px;
-    border-radius: 12px;
-    max-width: 500px;
-  }
-
-  .search-bar form {
-    display: flex;
     gap: 10px;
-    flex-wrap: wrap;
   }
-
-  .search-bar input[type="text"] {
-    padding: 10px;
-    flex-grow: 1;
-    min-width: 150px;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-    font-size: 16px;
-  }
-
-  .search-bar button {
-    padding: 10px 20px;
-    background-color: orange;
-    border: none;
-    color: white;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-
-  .search-bar button:hover {
-    background-color: darkorange;
-  }
-
-  /* Responsive : sur petits écrans, empiler verticalement */
-  @media (max-width: 540px) {
-    .site-header {
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
-     .search-bar {
-    margin: 0 auto; /* Centre horizontalement */
-    padding: 0 15px; /* Ajoute de l'espace aux bords */
-    width: 100%;
-    max-width: 90%; /* Limite la largeur max à 90% de l'écran */
+  .search-bar {
+    margin: 5px;
     box-sizing: border-box;
-     border-radius: 15px; 
+    flex: 1 1 auto; /* permet de s’adapter */
+    max-width: 250px; /* réduit la largeur sur mobile */
+    padding: 6px 10px; /* réduit un peu le padding pour compacité */
   }
-    .search-bar form {
-      flex-direction: column;
-      gap: 10px;
-    }
-    .search-bar input[type="text"],
-    .search-bar button {
-      width: 100%;
-      
-    }
+  .logo{
+    margin-top:10px;
+  
+    max-width: 80px; /* réduit la taille du logo sur mobile */
   }
+   .menu-toggle{
+     margin-top:15px;
+   }
+   .search-bar form{
+    margin: 0px;
+    
+   }  
+
+   }
+}  
 </style>
 
 <script>

@@ -81,4 +81,29 @@ if (temoignagesSlider) {
   window.addEventListener('load', adjustContentPadding);
   window.addEventListener('resize', adjustContentPadding);
   window.addEventListener('orientationchange', adjustContentPadding);
+  (function () {
+  function setHeaderHeight() {
+    var header = document.querySelector('header');
+    if (!header) return;
+    var h = Math.ceil(header.getBoundingClientRect().height);
+    document.documentElement.style.setProperty('--header-h', h + 'px');
+  }
+
+  // Au chargement
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setHeaderHeight);
+  } else {
+    setHeaderHeight();
+  }
+
+  // Recalcule si on change d’orientation / redimensionne
+  window.addEventListener('resize', setHeaderHeight);
+
+  // Recalcule si le contenu du header change (logo, search, menu)
+  var headerEl = document.querySelector('header');
+  if (headerEl && 'MutationObserver' in window) {
+    var obs = new MutationObserver(setHeaderHeight);
+    obs.observe(headerEl, { attributes: true, childList: true, subtree: true });
+  }
+})();
  

@@ -3521,24 +3521,120 @@ font: size 20px;
     width: 100%;
   }
   .full-logo {
-    width: 130px;
+    width: 190px;
     height: auto;
   }
   .accueil {
     margin-top: -15px;
   }
-
-  .hero {
-    padding-top: 20px;
-  }
-  .container h2{
-    padding-top: -190px;
-    }
-    .hero {
-  padding-top: 30px; /* ou 20px, voire 0 */
+.container{
+  padding-top: -50px;
 }
 #pc h2,#telephone h2,#electro h2{
   margin-top: -70px;
+  .hero {
+  padding-top: 80px; /* avant tu avais 150px */
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+}
+}
+@media (max-width: 540px) {
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto; /* laisse le header s’adapter à son contenu */
+    background: #121212;
+    z-index: 999;
+    display: flex;
+    flex-direction: column; /* pour que logo + barre search s'empilent */
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+  }
+
+  /* Ajuste la zone hero juste sous le header */
+ 
+  .full-logo {
+    width: 160px;  /* augmente la taille */
+    height: auto;  /* conserve les proportions */
+  }
+ #tendances.hero {
+    padding-top: -180px; /* correspond à la hauteur du header */
+  }
+   header { position: sticky; top: 0; } /* le flux pousse le contenu, plus d’overlay */
+  .hero#tendances { padding-top: 8px !important; }
+  /* Supprime les marges négatives qui font descendre ton contenu */
+  #pc, #telephone, #electro, #tendances,
+  .section,
+  .guide,
+  .accueil {
+    margin-top: -70px; !important;
+    padding-top:  80px !important;
+  }
+  .titre-tendances{
+    padding-top:190px;
+  }
+   
+   section h2 {
+    
+    margin-top: -190px;   /* plus d'espace au-dessus */
+   }
   
 }
+/* Responsive mobile uniquement pour les sections tendances */
+@media (max-width: 540px) {
+  #tendances-tech,
+  #tendances-maison,
+  #tendances-lifestyle {
+    padding: 15px 10px;
+    margin-top:20px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  #tendances-tech .produits,
+  #tendances-maison .produits,
+  #tendances-lifestyle .produits {
+    display: flex;
+    flex-direction: column; /* les produits passent en colonne */
+    gap: 15px;
+  }
+
+  #tendances-tech .produit,
+  #tendances-maison .produit,
+  #tendances-lifestyle .produit {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+
+  #tendances-tech h2,
+  #tendances-maison h2,
+  #tendances-lifestyle h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .categories {
+    margin-bottom: 150px; /* espace en bas */
+  }
+
+  #tendances-tech,
+  #tendances-maison,
+  #tendances-lifestyle {
+    margin-top: 200px; /* évite qu'ils collent aux autres blocs */
+    clear: both; /* force à passer en dessous */
+  }
+  .logo-container {
+    max-width: 200px; /* agrandit la zone */
+  }
+
+  .logo {
+    width: 150px;  /* largeur forcée du logo */
+    height: auto;  /* garde les proportions */
+  }
+
 }
